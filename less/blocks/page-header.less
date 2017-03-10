@@ -1,0 +1,71 @@
+.page-header {
+  text-align: center;
+  
+  &__inner {
+    position: relative;
+    text-align: right;
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.10);
+  }
+  
+  &__background {
+    height: 157px;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+	background-position: bottom center;
+	position: relative;
+	
+	&--index {
+	  height: 388px;
+      display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  width: 100%;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+	  background-position: top center;
+	  position: relative;
+	}
+  }
+  
+  &__toggle {
+	border: none;
+	width: 62px;
+	height: 57px;
+	background: none;
+	display: inline-block;
+	  
+    &--burger {
+    // разобраться с цветов бургера
+      fill: orange;
+    }
+  
+    &--cross {
+    fill: red;
+    position: absolute;
+	right: 0px;
+    }
+  }
+  
+   &__sedona {
+    display: block;
+    width: 72%;
+	margin-top: 52px;
+  }
+
+  &__sedona-index {
+    display: block;
+    width: 88%;
+	margin-top: 4px;
+  }
+  
+  &__triangle {
+    position: absolute;
+	bottom: -1px;
+	width: 100%;
+
+  }
+}

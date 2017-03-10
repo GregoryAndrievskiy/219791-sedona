@@ -1,0 +1,38 @@
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+    
+  &__item {
+    display: inline-block;
+	margin-top: 15px;
+	margin-left: 2px;
+    margin-right: 3px;
+
+  }
+  
+  &__link {
+	width: 47px;
+	height: 48px;
+	background-color: @bgBlue;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	color: @white;
+	fill: @white;
+	
+    &--twitter {
+	  background-image: url("../img/icon-twitter.svg");
+	}
+	
+	&--facebook {
+	  background-image: url("../img/icon-facebook.svg");
+	}
+	
+	&--youtube {
+	  background-image: url("../img/icon-youtube.svg");
+	}
+  }
+}

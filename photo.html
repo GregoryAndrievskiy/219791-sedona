@@ -2,25 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
-      <div class="logo">
-        <img src="http://placehold.it/100x100">
-      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active"><a href='#' class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a href='#' class="main-nav__link">Фото и видео</a></li>
+            <li class="main-nav__item">
+			  <a href='#' class="main-nav__link">Главная</a>
+			  <button class="page-header__toggle page-header__toggle--cross" type="button">
+		        <img class="page-header__cross-icon" src="img/icon-cross.svg">
+	          </button>
+			</li>
+            <li class="main-nav__item main-nav__item--active"><a href='#' class="main-nav__link">Фото и видео</a></li>
             <li class="main-nav__item"><a href='#' class="main-nav__link">Форма отзыва</a></li>
             <li class="main-nav__item"><a href='#' class="main-nav__link">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
-      <img src="http://placehold.it/150x70">
+	  <div class="page-header__inner">
+	    <button class="page-header__toggle page-header__toggle--burger" type="button">
+		  <img class="page-header__burger-icon" src="img/icon-menu.svg">
+	    </button>
+	    <div class="logo">
+          <a href="index.html" class="logo__link"><img class="logo__sedona" src="img/logo-sedona-mobile.svg"></a>
+        </div>
+	    <div class="page-header__background">
+		<img class="page-header__sedona" src="img/text-sedona.svg">
+		<img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg">
+        </div>
+	  </div>
     </header>
     <section class="main">
       <h1 class="title">Фото и видео</h1>
@@ -29,50 +43,69 @@
         <ul class="gallery-list">
           <li class="gallery-list__item">
             <figure class="gallery-list__figure">
-              <img class="gallery-list__photo" src="http://placehold.it/150x100">
+              <img class="gallery-list__photo" src="img/photo-1-mobile@1x.jpg">
               <figcaption class="gallery-list__caption">
-                <span class="gallery-list_name">Неродные просторы</span>
-                <span class="gallery-list__author">Автор фото: Борис</span>
-              </figcaption>
+                <div class="gallery-list__name">Неродные просторы</div>
+                <div class="gallery-list__author">Автор фото: Борис</div>
+                <div class="gallery-list__like">1350</div>
+			  </figcaption>
             </figure>
-            <div class="gallery-list__like">1350</div>
-            </li>
+          </li>
           <li class="gallery-list__item">
             <figure class="gallery-list__figure">
-              <img class="gallery-list__photo" src="http://placehold.it/150x100">
+              <img class="gallery-list__photo" src="img/photo-2-mobile@1x.jpg">
               <figcaption class="gallery-list__caption">
-                <span class="gallery-list_name">Местная растительность</span>
-                <span class="gallery-list__author">Автор фото: Сергей</span>
-              </figcaption>
+                <div class="gallery-list__name">Местная растительность</div>
+                <div class="gallery-list__author">Автор фото: Сергей</div>
+                <div class="gallery-list__like">143</div>
+			  </figcaption>
             </figure>
-            <div class="gallery-list__like">143</div>
-            </li>
+          </li>
           <li class="gallery-list__item">
             <figure class="gallery-list__figure">
-              <img class="gallery-list__photo" src="http://placehold.it/150x100">
+              <img class="gallery-list__photo" src="img/photo-3-mobile@1x.jpg">
               <figcaption class="gallery-list__caption">
-                <span class="gallery-list_name">Дорога на север</span>
-                <span class="gallery-list__author">Автор фото: Петр</span>
-              </figcaption>
+                <div class="gallery-list__name">Дорога на север</div>
+                <div class="gallery-list__author">Автор фото: Петр</div>
+                <div class="gallery-list__like">96</div>
+			 </figcaption>
             </figure>
-            <div class="gallery-list__like">96</div>
-            </li>
+          </li>
           <li class="gallery-list__item">
             <figure class="gallery-list__figure">
-              <img class="gallery-list__photo" src="http://placehold.it/150x100">
+              <img class="gallery-list__photo" src="img/photo-4-mobile@1x.jpg">
               <figcaption class="gallery-list__caption">
-                <span class="gallery-list_name">Мост Дьявола</span>
-                <span class="gallery-list__author">Автор фото: Антон</span>
-              </figcaption>
+                <div class="gallery-list__name">Мост Дьявола</div>
+                <div class="gallery-list__author">Автор фото: Антон</div>
+                <div class="gallery-list__like">254</div>
+			  </figcaption>
             </figure>
-            <div class="gallery-list__like">254</div>
-            </li>
+          </li>
         </ul>
       </section>
       <section class="presentation">
         <h2 class="presentation__title">Все еще сомнваетесь?</h2>
         <p class="presentation__description">Смотрим видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="presentation__screen" src="http://placehold.it/150x100">
+        <img class="presentation__screen" src="img/video-mobile@1x.jpg">
+		<div class="presentation__player">
+		  <div class="presentation__bar">
+		    <svg class="presentation__dot">
+              <line x1="23" y1="22" x2="256" y2="23" stroke="rgba(105,105,105, 0.6)" stroke-width="2"/>
+			  <circle  r="4" cx="62px" cy="23px" fill="white"/>
+			</svg>
+		  </div>
+		  <div class="presentation__control-bar">
+		    <div class="presentation__item">
+		      <img class="presentation__item presentation__item--replay" src="img/icon-video-replay.svg">
+		    </div>
+			<div class="presentation__item">
+			  <img class="presentation__item presentation__item--subtitles" src="img/icon-video-subtitles.svg">
+		    </div>
+			<div class="presentation__item">
+			  <img class="presentation__item presentation__item--fullscreen" src="img/icon-video-fullscreen.svg">
+		    </div>
+		  </div>
+		</div>
       </section>
     </section>
     <footer class="page-footer">
@@ -80,23 +113,23 @@
         <p class="page-footer__tag">
           <b>#VISITSEDONA</b>
         </p>
-        <p class="page-footer__social">
+        <div class="page-footer__social">
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="#"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
+              <a class="social__link social__link--facebook" href="#"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на Ютьубе</a>
+              <a class="social__link social__link--youtube" href="#"></a>
             </li>
           </ul>
-        </p>
-        <p class="page-footer__copyright">
-          Разработано
-          <!-- изображения будут в css-->
-        </p>
+        </div>
+		<div class="page-footer__copyright">
+        <p class="page-footer__text">Разработано</p>
+		<a class="page-footer__link" href="#"></a>
+		</div>
       </div>
     </footer>
   </body>

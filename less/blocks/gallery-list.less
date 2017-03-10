@@ -1,0 +1,59 @@
+.gallery-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid @photoBorderTop;
+
+  &__item {
+    border-top: 1px solid @photoBorderTop;
+
+  }
+  
+  &__figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+    &__photo {
+    padding: 22px 0px 0px 21px;
+  }
+  
+  &__caption {
+    padding-top: 15px;
+    
+  }
+  
+  &__name {
+    font-family: PTSansBold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+	padding-left: 20px;
+	display: block;
+	text-align: left;
+	margin-bottom: 7px;
+  }
+  
+  &__author {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 14px;
+	padding-left: 20px;
+	display: block;
+	text-align: left;
+	margin-bottom: 15px;
+  }
+  
+  &__like {
+    font-family: PTSansBold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+	padding-left: 20px;
+	display: block;
+	text-align: left;
+	margin-left: 37px;
+	margin-bottom: 19px;
+  }
+  
+}
