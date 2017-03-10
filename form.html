@@ -2,32 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
-      <div class="logo">
-        <img src="http://placehold.it/100x100">
-      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active"><a href='#' class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item">
+              <a href='#' class="main-nav__link">Главная</a>
+              <button class="page-header__toggle page-header__toggle--cross" type="button">
+                <img class="page-header__cross-icon" src="img/icon-cross.svg">
+              </button>
+            </li>
             <li class="main-nav__item"><a href='#' class="main-nav__link">Фото и видео</a></li>
-            <li class="main-nav__item"><a href='#' class="main-nav__link">Форма отзыва</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href='#' class="main-nav__link">Форма отзыва</a></li>
             <li class="main-nav__item"><a href='#' class="main-nav__link">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
-      <img src="http://placehold.it/150x70">
+      <div class="page-header__inner">
+        <button class="page-header__toggle page-header__toggle--burger" type="button">
+          <img class="page-header__burger-icon" src="img/icon-menu.svg">
+        </button>
+        <div class="logo">
+          <a href="index.html" class="logo__link"><img class="logo__sedona" src="img/logo-sedona-mobile.svg"></a>
+        </div>
+        <div class="page-header__background">
+        <img class="page-header__sedona" src="img/text-sedona.svg">
+        <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg">
+        </div>
+      </div>
     </header>
     <section class="main">
       <h1 class="title">Оставьте свой отзыв</h1>
       <p class="subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <section class="form-wrapper">
         <form class="form" action="https://echo.htmlacademy.ru/">
-      <div class="form__block form__block--flex">
+      <div class="form__block form__block">
         <h2 class="form__title">Представьтесь:</h2>
         <label class="form__label" for="name">Имя*:
             <input class="form__input" type="name" name="name" value="Петр" required>
@@ -50,28 +64,28 @@
       </div>
       <div class="form__block">
         <h2 class="form__title">Ваше общее впечатление:</h2>
-        <label class="form__label for="positive">
+        <label class="form__label form__label--test form__label--radio for="positive">
           <input class="form__radio" type="radio" name="rating" value="positive" checked>Скорее положительное
         </label>
-          <label class="form__label for="negative">
+          <label class="form__label form__label--test  form__label--radio for="negative">
         <input class="form__radio" type="radio" name="rating" value="negative" >Скорее отрицательное
         </label>
-        <label class="form__label for="average">
-          <input class="form__radio" type="radio" name="rating" value="verage" >Затрудняюсь ответить
+        <label class="form__label form__label--test  form__label--radio for="average">
+          <input class="form__radio" type="radio" name="rating" value="average" >Затрудняюсь ответить
         </label>
       </div>
       <div class="form__block">
         <h2 class="form__title">Посещенные достопримечательности:</h2>
-        <label class="form__label for="devilsbridge">
+        <label class="form__label form__label--test  form__label--checkbox for="devilsbridge">
           <input class="form__checkbox" type="checkbox" name="devilsbridge" checked>Мост Дьявола
         </label>
-        <label class="form__label for="devilsbridge">
+        <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
           <input class="form__checkbox" type="checkbox" name="slidepark" checked>Слайд-парк
         </label>
-        <label class="form__label for="devilsbridge">
+        <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
           <input class="form__checkbox" type="checkbox" name="bellhill">Гора-Колокол
         </label>
-        <label class="form__label for="devilsbridge">
+        <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
           <input class="form__checkbox" type="checkbox" name="redrocks" checked>Красные скалы
         </label>
       </div>
@@ -88,23 +102,23 @@
         <p class="page-footer__tag">
           <b>#VISITSEDONA</b>
         </p>
-        <p class="page-footer__social">
+        <div class="page-footer__social">
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="#"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
+              <a class="social__link social__link--facebook" href="#"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на Ютьубе</a>
+              <a class="social__link social__link--youtube" href="#"></a>
             </li>
           </ul>
-        </p>
-        <p class="page-footer__copyright">
-          Разработано
-          <!-- изображения будут в css-->
-        </p>
+        </div>
+        <div class="page-footer__copyright">
+        <p class="page-footer__text">Разработано</p>
+        <a class="page-footer__link" href="#"></a>
+        </div>
       </div>
     </footer>
   </body>
