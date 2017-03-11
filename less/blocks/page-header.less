@@ -8,7 +8,6 @@
   }
 
   &__background {
-    height: 157px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,9 +16,10 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: bottom center;
     position: relative;
+	height: 160px;
 
     &--index {
-      height: 388px;
+      height: 390px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,22 +32,34 @@
   }
 
   &__toggle {
-    border: none;
-    width: 62px;
-    height: 57px;
-    background: none;
+    height: 56px;
     display: inline-block;
-
-    &--burger {
-    // разобраться с цветов бургера
-      fill: orange;
+  }
+  
+  &__cross {
+    border: none;
+	background: none;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+	width: 64px;
+    height: 58px;
     }
 
-    &--cross {
-      fill: red;
-      position: absolute;
-      right: 0px;
-    }
+  &__burger {
+    border: none;
+	background: none;
+	width: 64px;
+    height: 58px;
+  }
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
   }
 
   &__sedona {
@@ -64,8 +76,8 @@
 
   &__triangle {
     position: absolute;
-    bottom: -1px;
     width: 100%;
-
+	bottom: 1px;
+	box-shadow: 10px 10px 10px 0px rgba(255,255,255,1);
   }
 }

@@ -1,5 +1,5 @@
 .main-nav {
-  text-align: right;
+  text-align: center;
 
   &__items {
     display: block;
@@ -10,18 +10,19 @@
   }
 
   &__link {
+    display: inline-block;
     text-transform: uppercase;
     color: @white;
     text-decoration: none;
     font-family: PTSansBold, Arial, sans-serif;
-    font-size: 1.125em;
+    font-size: 18px;
+	line-height: 54px;
   }
 
   &__item {
-      border-top: 1px solid @navBorderTop;
+    border-top: 1px solid @navBorderTop;
     border-bottom: 1px solid @navBorderBottom;
     text-align: center;
-    line-height: 53px;
 
     &:first-child {
       border-top: none;
