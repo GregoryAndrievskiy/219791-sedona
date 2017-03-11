@@ -1,0 +1,34 @@
+.main-nav {
+  text-align: right;
+
+  &__items {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: @bgNav;
+    list-style: none;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: @white;
+    text-decoration: none;
+    font-family: PTSansBold, Arial, sans-serif;
+    font-size: 1.125em;
+  }
+
+  &__item {
+      border-top: 1px solid @navBorderTop;
+    border-bottom: 1px solid @navBorderBottom;
+    text-align: center;
+    line-height: 53px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
