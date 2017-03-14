@@ -52,5 +52,68 @@
     display: block;
 	margin-top: 40px;
 	margin-bottom: 37px;
+	width: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .order {
+    display: flex;
+	flex-direction: column;
+
+    padding-top: 40px;
+	align-items: center;
+	
+    &__title {
+	  font-size: 30px;
+	}
+  
+    &__description {
+	  width: 410px;
+	}
+	
+	&__button {
+	 width: 500px;
+	}
+	
+	&__link {
+	  margin-top: 11px;
+	}
+	
+	&__map {
+	  width: 768px;
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .order {
+    display: flex;
+	flex-direction: column;
+
+    padding-top: 40px;
+	align-items: center;
+	
+    &__title {
+	  font-size: 30px;
+	}
+  
+    &__description {
+	  width: 410px;
+	}
+	
+	&__button {
+	 width: 500px;
+	}
+	
+	&__link {
+	  margin-top: 11px;
+	}
+	
+	&__map {
+	  width: 1240px;
+	}
   }
 }

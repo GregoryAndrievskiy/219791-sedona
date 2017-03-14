@@ -1,6 +1,13 @@
 .presentation {
   position: relative;
   margin-bottom: 140px;
+  
+  &__video {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
 
   &__title {
     display: block;
@@ -28,11 +35,15 @@
     z-index: 2;
     position: absolute;
     top: 313px;
-    left: 21px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 94%;
+	align-items: center;
+    width: 100%;
+  }
+  
+  &__screen {
+ 
   }
 
   &__dot {
@@ -76,5 +87,41 @@
       width: 21px;
       margin-left: 150px;
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+  .presentation {
+     width: 768px;
+	 
+	&__player {
+      top: 546px;
+	}
+	
+	&__video {
+      
+    }
+	
+	&__screen {
+	  width: 100%;
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+  .presentation {
+    width: 1240px;
+	
+	&__player {
+      top: 567px;
+	}
+	
+	&__video {
+	  
+    }
+	
+	&__screen {
+	  width: 800px;
+	}
   }
 }

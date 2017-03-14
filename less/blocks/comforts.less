@@ -7,20 +7,22 @@
   padding: 0;
   margin: 0;
   padding-top: 14px;
-  padding-bottom: 33px;
+  padding-bottom: 28px;
 
   &__item {
     padding: 0px;
 	margin-top: 0px;
     display: inline-block;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
   }
 
   &__name {
     margin-top: 0px;
     margin-left: 26px;
-    display: block;
+    display: flex;
+	flex-direction: row;
 	text-align: left;
+	
   }
 
   &__icon {
@@ -48,5 +50,60 @@
     padding-right: 20px;
     margin: 0;
 	margin-left: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .comforts {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+	justify-content: center;
+	height: 286px;
+	
+	&__name {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 0;
+	}
+	
+	&__description {
+      margin: 0;
+	  padding: 0;
+	  text-align: center;
+
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .comforts {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+	justify-content: center;
+	height: 287px;
+	
+	&__item {
+	  padding-left: 60px;
+      padding-right: 60px;
+	}
+
+	&__name {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 0;
+	}
+	
+	&__description {
+      margin: 0;
+	  padding: 0;
+	  text-align: center;
+
+	}
   }
 }

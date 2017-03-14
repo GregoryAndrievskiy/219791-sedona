@@ -44,7 +44,7 @@
     &--font-black {
       margin-top: 0px;
       color: @black;
-	  line-height: 4px;
+      line-height: 4px;
     }
   }
 
@@ -55,7 +55,7 @@
     font-size: 14px;
     line-height: 21px;
     margin-top: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: @white;
     padding-left: 20px;
     padding-right: 20px;
@@ -67,26 +67,26 @@
     }
   }
 
-  &__overview {
-    height: 260px;
-    background-image: url("../img/photo-city@1x.jpg");
-    background-position: top center;
-    background-size: auto 100%;
-   background-repeat: no-repeat;
-  }
-
-    &__bridge {
-    height: 259px;
-    background-image: url("../img/photo-4-mobile@1x.jpg");
-    background-position: bottom right;
-    background-size: 100% auto;
-   background-repeat: no-repeat;
-  }
-
   &__item {
     list-style: none;
-    display: inline-block;
-	padding-top: 30px;
+
+	  &--overview {
+	    display: inline-block;
+        height: 260px;
+        background-image: url("../img/photo-city@1x.jpg");
+        background-position: top center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+      }
+
+	  &--bridge {
+	  display: inline-block;
+        height: 259px;
+        background-image: url("../img/photo-4-mobile@1x.jpg");
+        background-position: bottom right;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
 
     &:first-child {
       padding-top: 68px;
@@ -94,20 +94,181 @@
 
     &--bg-blue {
       background-color: @bgBlue;
+	  padding-top: 30px;
     }
 
     &--bg-grey {
       padding-top: 38px;
       background-color: @bgGrey;
-	  
-	  &:last-child {
-	    padding-bottom: 15px;
-      }
     }
   }
 
   &__photo {
     display: block;
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .facts-list {
+  
+    &__item {
+	
+	  &--bg-blue {
+	    order: -3;
+	  }
+  
+      &--devils {
+        order: -2;
+	  }
+  
+      &--bridge {
+        order: -1;
+      }
+	  
+	  &--overview {
+	    order: -2;
+	  }
+	  
+	  &--comforts {
+	    order: -2;
+	  }
+	
+	}
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .facts-list {
+    flex-direction: row;
+	flex-wrap: wrap;
+	
+	&__title {
+	  &--font-black {
+	    font-size: 21px;
+		line-height: 30px;
+		padding-left: 50px;
+        padding-right: 50px;
+	  }
+	}
+
+    &__subtitle {
+	  &--font-black {
+	    margin-top: 0px;
+	    padding-left: 50px;
+        padding-right: 50px;
+		word-wrap: break-word;
+	  }
+	}
+
+	&__divider {
+	  display: none;
+	}
+
+    &__item {
+	  width: 256px;
+	  
+	  &--comforts {
+	    width: 768px;
+	  }
+
+	  &--bg-grey {
+	    padding-top: 23px;
+	    height: 220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+      }
+
+	  &--overview {
+	  	width: 512px;
+        background-image: url("../img/photo-city@1x.jpg");
+        background-position: center right;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+      }
+
+	  &--bridge {
+	  display: block;
+	    width: 512px;
+        height: 256px;
+        background-image: url("../img/photo-4-mobile@1x.jpg");
+        background-position: bottom right;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .facts-list {
+    flex-direction: row;
+	flex-wrap: wrap;
+	
+	&__title {
+	  &--font-black {
+	    font-size: 21px;
+		line-height: 30px;
+		padding-left: 50px;
+        padding-right: 50px;
+	  }
+	}
+
+    &__subtitle {
+	  &--font-black {
+	    margin-top: 0px;
+	    padding-left: 50px;
+        padding-right: 50px;
+		word-wrap: break-word;
+	  }
+	}
+
+	&__divider {
+	  display: none;
+	}
+
+    &__item {
+	  width: calc(1240px / 3);
+	  
+	  &--comforts {
+	    width: 1240px;
+	  }
+
+	  &--bg-blue {
+	  
+	  	&:last-child {
+
+	    }
+      }
+
+	  &--bg-grey {
+	    padding-top: 23px;
+	    height: 220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+      }
+
+	  &--overview {
+	  	width: calc(1240px * 2 / 3);
+        background-image: url("../img/photo-city@1x.jpg");
+        background-position: center right;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+
+	  &--bridge {
+	  display: block;
+	    width: calc(1240px * 2 / 3);
+        height: 256px;
+        background-image: url("../img/photo-4-mobile@1x.jpg");
+        background-position: bottom right;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+	}
   }
 }
