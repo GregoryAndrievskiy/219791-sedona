@@ -1,14 +1,14 @@
 .main-nav {
   text-align: center;
-  
+
   &--closed {
     display: none;
-  }	
-	
+  }
+
   &--opened {
     display: block;
   }
-  
+
   &--nojs {
     display: block;
   }
@@ -49,29 +49,29 @@
 @media (max-width: 767px) {
 
   .main-nav {
-  
+
     &__item {
-	
-	  &:hover {
-	    background-color: @navHov;
-	  }
-	  
-	  &:active {
-	    background-color: @navDown;
-	  }
-	}
+
+      &:hover {
+        background-color: @navHov;
+      }
+
+      &:active {
+        background-color: @navDown;
+      }
+    }
   }
 }
 
 
 @media (min-width: 768px) and (max-width: 1240px) {
-  
+
   .main-nav {
     z-index: 2;
     width: 768px;
     position: absolute;
     display: block;
-    
+
     &__item {
       border: none;
       min-width: 110px;
@@ -89,44 +89,44 @@
       color: @black;
       font-size: 14px;
       line-height: 53px;
-	  
-	  &:hover {
-	    color: @navHovF;
-	  }
-	  
-	  &--active {
-	    color: @navAct;
-	      
-	    &:hover {
-	      color: @navActHov;
-	    }
-		
-		&:active {
-	      color: @navDownF;
-	    }
-	
-	    &:active {
-	      color: @navActDown;
-	    }
-	  }
-	}
+
+      &:hover {
+        color: @navHovF;
+      }
+
+      &--active {
+        color: @navAct;
+
+        &:hover {
+          color: @navActHov;
+        }
+
+        &:active {
+          color: @navDownF;
+        }
+
+        &:active {
+          color: @navActDown;
+        }
+      }
+    }
 
     &__logo {
-     position: relative;
-     transform: none;
-     top: 0;
+      position: relative;
+      transform: none;
+      top: 0;
     }
   }
 }
 
 @media (min-width: 1240px) {
-  
+
   .main-nav {
     z-index: 2;
     width: 1240px;
     position: absolute;
     display: block;
-    
+
     &__item {
       border: none;
       min-width: 110px;
@@ -144,32 +144,32 @@
       color: @black;
       font-size: 14px;
       line-height: 53px;
-	  
-	  &:hover {
-	    color: @navHovF;
-	  }
-	  
-	  &:active {
-	    color: @navDownF;
-	  }
-    
-	  &--active {
-	    color: @navAct;
-	      
-	    &:hover {
-	      color: @navActHov;
-	    }
-	
-	    &:active {
-	      color: @navActDown;
-	    }
-	  }
-	}
+
+      &:hover {
+        color: @navHovF;
+      }
+
+      &:active {
+        color: @navDownF;
+      }
+
+      &--active {
+        color: @navAct;
+
+        &:hover {
+          color: @navActHov;
+        }
+
+        &:active {
+          color: @navActDown;
+        }
+      }
+    }
 
     &__logo {
-     position: relative;
-     transform: none;
-     top: 0;
+      position: relative;
+      transform: none;
+      top: 0;
     }
   }
 }

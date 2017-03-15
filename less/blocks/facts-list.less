@@ -70,8 +70,8 @@
   &__item {
     list-style: none;
 
-	  &--overview {
-	    display: inline-block;
+      &--overview {
+        display: inline-block;
         height: 260px;
         background-image: url("../img/photo-city@1x.jpg");
         background-position: top center;
@@ -79,8 +79,8 @@
         background-repeat: no-repeat;
       }
 
-	  &--bridge {
-	  display: inline-block;
+      &--bridge {
+      display: inline-block;
         height: 259px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
         background-position: bottom right;
@@ -94,7 +94,7 @@
 
     &--bg-blue {
       background-color: @bgBlue;
-	  padding-top: 30px;
+      padding-top: 30px;
     }
 
     &--bg-grey {
@@ -111,30 +111,30 @@
 
 @media (max-width: 767px) {
   .facts-list {
-  
+
     &__item {
-	
-	  &--bg-blue {
-	    order: -3;
-	  }
-  
+
+      &--bg-blue {
+        order: -3;
+      }
+
       &--devils {
         order: -2;
-	  }
-  
+      }
+
       &--bridge {
         order: -1;
       }
-	  
-	  &--overview {
-	    order: -2;
-	  }
-	  
-	  &--comforts {
-	    order: -2;
-	  }
-	
-	}
+
+      &--overview {
+        order: -2;
+      }
+
+      &--comforts {
+        order: -2;
+      }
+
+    }
   }
 }
 
@@ -142,63 +142,63 @@
 
   .facts-list {
     flex-direction: row;
-	flex-wrap: wrap;
-	
-	&__title {
-	  &--font-black {
-	    font-size: 21px;
-		line-height: 30px;
-		padding-left: 50px;
+    flex-wrap: wrap;
+
+    &__title {
+      &--font-black {
+        font-size: 21px;
+        line-height: 30px;
+        padding-left: 50px;
         padding-right: 50px;
-	  }
-	}
+      }
+    }
 
     &__subtitle {
-	  &--font-black {
-	    margin-top: 0px;
-	    padding-left: 50px;
+      &--font-black {
+        margin-top: 0px;
+        padding-left: 50px;
         padding-right: 50px;
-		word-wrap: break-word;
-	  }
-	}
+        word-wrap: break-word;
+      }
+    }
 
-	&__divider {
-	  display: none;
-	}
+    &__divider {
+      display: none;
+    }
 
     &__item {
-	  width: 256px;
-	  
-	  &--comforts {
-	    width: 768px;
-	  }
+      width: 256px;
 
-	  &--bg-grey {
-	    padding-top: 23px;
-	    height: 220px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+      &--comforts {
+        width: 768px;
       }
 
-	  &--overview {
-	  	width: 512px;
+      &--bg-grey {
+        padding-top: 23px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &--overview {
+          width: 512px;
         background-image: url("../img/photo-city@1x.jpg");
         background-position: center right;
         background-size: auto 100%;
         background-repeat: no-repeat;
       }
 
-	  &--bridge {
-	  display: block;
-	    width: 512px;
+      &--bridge {
+      display: block;
+        width: 512px;
         height: 256px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
         background-position: bottom right;
         background-size: 100% auto;
         background-repeat: no-repeat;
       }
-	}
+    }
   }
 }
 
@@ -206,69 +206,69 @@
 
   .facts-list {
     flex-direction: row;
-	flex-wrap: wrap;
-	
-	&__title {
-	  &--font-black {
-	    font-size: 21px;
-		line-height: 30px;
-		padding-left: 50px;
+    flex-wrap: wrap;
+
+    &__title {
+      &--font-black {
+        font-size: 21px;
+        line-height: 30px;
+        padding-left: 50px;
         padding-right: 50px;
-	  }
-	}
+      }
+    }
 
     &__subtitle {
-	  &--font-black {
-	    margin-top: 0px;
-	    padding-left: 50px;
+      &--font-black {
+        margin-top: 0px;
+        padding-left: 50px;
         padding-right: 50px;
-		word-wrap: break-word;
-	  }
-	}
+        word-wrap: break-word;
+      }
+    }
 
-	&__divider {
-	  display: none;
-	}
+    &__divider {
+      display: none;
+    }
 
     &__item {
-	  width: calc(1240px / 3);
-	  
-	  &--comforts {
-	    width: 1240px;
-	  }
+      width: calc(1240px / 3);
 
-	  &--bg-blue {
-	  
-	  	&:last-child {
-
-	    }
+      &--comforts {
+        width: 1240px;
       }
 
-	  &--bg-grey {
-	    padding-top: 23px;
-	    height: 220px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+      &--bg-blue {
+
+          &:last-child {
+
+        }
       }
 
-	  &--overview {
-	  	width: calc(1240px * 2 / 3);
+      &--bg-grey {
+        padding-top: 23px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &--overview {
+          width: calc(1240px * 2 / 3);
         background-image: url("../img/photo-city@1x.jpg");
         background-position: center right;
         background-size: 100% auto;
         background-repeat: no-repeat;
       }
 
-	  &--bridge {
-	  display: block;
-	    width: calc(1240px * 2 / 3);
+      &--bridge {
+      display: block;
+        width: calc(1240px * 2 / 3);
         height: 256px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
         background-position: bottom right;
         background-size: 100% auto;
         background-repeat: no-repeat;
       }
-	}
+    }
   }
 }
