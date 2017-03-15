@@ -1,0 +1,33 @@
+.PTSans();
+.PTSansBold();
+
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: @white;
+  align-items: center;
+ 
+  &__wrapper {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .body {
+    &__wrapper {
+      width: 768px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .body {
+    &__wrapper {
+      width: 1240px;
+    }
+  }
+}
