@@ -1,8 +1,43 @@
 .facts {
   position: relative;
+<<<<<<< HEAD
 
   &__triangle {
     position: absolute;
     top: -4px;
   }
 }
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3px;
+  align-items: center;
+
+  &__triangle {
+    width: 100%;
+    max-width: 420px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .facts {
+
+    &__triangle {
+	  display: none;
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .facts {
+
+    &__triangle {
+	  display: none;
+	}
+  }
+}
+>>>>>>> module4-task1

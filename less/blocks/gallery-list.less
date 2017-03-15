@@ -4,26 +4,54 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: space-around;
+=======
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 320px;
+
+>>>>>>> module4-task1
   border-bottom: 1px solid @photoBorderTop;
 
   &__item {
     border-top: 1px solid @photoBorderTop;
+<<<<<<< HEAD
 
   }
 
   &__figure {
+=======
+  }
+
+  &__figure {
+    display: flex;
+	flex-direction: column;
+>>>>>>> module4-task1
     margin: 0;
     padding: 0;
   }
 
     &__photo {
+<<<<<<< HEAD
     padding: 22px 0px 0px 21px;
   }
 
   &__caption {
     padding-top: 15px;
 
+=======
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+>>>>>>> module4-task1
   }
 
   &__name {
@@ -31,7 +59,10 @@
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 20px;
+<<<<<<< HEAD
     display: block;
+=======
+>>>>>>> module4-task1
     text-align: left;
     margin-bottom: 7px;
   }
@@ -40,7 +71,10 @@
     font-family: PTSans, Arial, sans-serif;
     font-size: 14px;
     padding-left: 20px;
+<<<<<<< HEAD
     display: block;
+=======
+>>>>>>> module4-task1
     text-align: left;
     margin-bottom: 15px;
   }
@@ -50,9 +84,68 @@
     text-transform: uppercase;
     font-size: 14px;
     padding-left: 20px;
+<<<<<<< HEAD
     display: block;
+=======
+>>>>>>> module4-task1
     text-align: left;
     margin-left: 37px;
     margin-bottom: 19px;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .gallery-list {
+    flex-direction: row;
+	width: 768px;
+	border: none;
+  
+    &__item {
+      border-top: none;
+      width: 50%;
+      
+      &:first-child {
+      width: 100%;
+      }
+    }
+    
+    &__photo {
+      border-top: none;
+      height: 280px;
+	  width: 100%;
+     
+      &:first-child {
+      width: 90%;
+      }
+    }
+    
+    &__figure {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .gallery-list {
+    width: 1240px;
+    flex-direction: row;
+	border: none;
+
+    &__item {
+      border-top: none;
+      width: calc(1240px / 3);
+      margin: 0;
+      padding: 0; 
+            
+      &:first-child {
+        width: 1240px;
+      }
+    }
+  }
+}
+>>>>>>> module4-task1

@@ -1,9 +1,25 @@
 .form {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid @photoBorderTop;
 
+=======
+
+  &__places {
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid @photoBorderTop;
+  }
+  
+>>>>>>> module4-task1
   &__block {
     display: flex;
     flex-direction: column;
@@ -30,14 +46,21 @@
     margin-bottom: 45px;
     line-height: 25px;
 
+<<<<<<< HEAD
       &--test {
+=======
+    &--test {
+>>>>>>> module4-task1
       font-family: PTSansBold, Arial, sans-serif;
       text-transform: none;
       font-size: 17px;
       margin-top: 0px;
       margin-bottom: 26px;
       line-height: 41px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> module4-task1
     }
 
     &--radio:before {
@@ -50,6 +73,7 @@
       border-radius: 100px;
     }
 
+<<<<<<< HEAD
     &--checkbox:before {
       content: "";
       display: inline-block;
@@ -59,6 +83,11 @@
       background-color: @bgGrey;
       border-radius: 5px;
     }
+=======
+	&--checkbox {
+
+	}
+>>>>>>> module4-task1
   }
 
   &__input {
@@ -87,12 +116,147 @@
     color: @white;
     background-color: @bgBlue;
   }
+<<<<<<< HEAD
 
   &__checkbox {
     display: none;
+=======
+  
+  &__checkbox {
+>>>>>>> module4-task1
   }
 
   &__radio {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: 768px) and (max-width: 1240px) {
+  .form {
+  
+    &__places {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  height: 180px;
+	}
+  
+    &__wrapper {
+	  display: flex;
+      flex-direction: row;
+	  flex-wrap: wrap;
+	}
+	
+	&__name {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  align-items: center;
+	}
+	
+	&__opinion {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  align-items: center;
+	}
+	
+	&__contacts {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	}
+	
+	&__block {
+	  border: none;
+	  
+	  &--name{
+	  
+	  }
+	  
+	  &--contacts {
+	    width: 100%;
+	  }
+	  
+	  &--opinion {
+	    order: -2;
+	  }
+	  
+	  &--places {
+	    width: 100%;
+	  }
+	  
+	  &--text {
+	    width: 100%;
+	  }
+	}
+  }
+}
+
+@media (min-width: 1240px) {
+  .form {
+  
+    &__places {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  width: 100%;
+	  justify-content: space-around;
+	}
+	
+	&__contacts {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  width: 100%;
+	}
+	
+	&__name {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  align-items: center;
+	}
+	
+	&__opinion {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  align-items: center;
+	}
+
+    &__wrapper {
+	  display: flex;
+      flex-direction: row;
+	  flex-wrap: wrap;
+	}
+	
+	&__block {
+	  border: none;
+	  
+	  &--name{
+	    width: 40%;
+	  }
+	  
+	  &--contacts {
+	    width: 100%;
+	  }
+	  
+	  &--opinion {
+	    order: -2;
+		width: 40%;
+	  }
+	  
+	  &--places {
+	    width: 100%;
+	  }
+	  
+	  &--text {
+	    width: 100%;
+	  }
+	}
+  }
+}
+>>>>>>> module4-task1
