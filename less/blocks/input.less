@@ -1,0 +1,97 @@
+.form {
+
+  &__checkbox {
+
+    & + .form__label--checkbox::before {
+      content: "";
+      display: inline-block;
+      height: 58px;
+      width: 58px;
+      background-color: @inputGray;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+    }
+
+    & + .form__label--checkbox:hover::before {
+      background-color: @inputHov;
+    }
+
+    &:checked + .form__label--checkbox:active::before {
+      background-color: @inputDown;
+    }
+
+    &:checked + .form__label--checkbox::before {
+      background-color: @inputGray;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:checked + .form__label--checkbox:hover::before {
+      background-color: @inputHov;
+    }
+
+    &:checked + .form__label--checkbox:active::before {
+      background-color: @inputDown;
+    }
+  }
+
+    &__radio {
+
+    & + .form__label--radio::before {
+      content: "";
+      display: inline-block;
+      height: 58px;
+      width: 58px;
+      background-color: @inputGray;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
+
+    & + .form__label--radio:hover::before {
+      background-color: @inputHov;
+    }
+
+    &:checked + .form__label--radio:active::before {
+      background-color: @inputDown;
+    }
+
+    &:checked + .form__label--radio::before {
+      background-color: @inputGray;
+      background-image: url("../img/dot.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:checked + .form__label--radio:hover::before {
+      background-color: @inputHov;
+    }
+
+    &:checked + .form__label--radio:active::before {
+      background-color: @inputDown;
+    }
+  }
+
+  &__label {
+
+    &--tel::after {
+      content: "";
+      display: inline-block;
+      height: 58px;
+      width: 58px;
+      background-color: @inputGray;
+      background-repeat: no-repeat;
+      background-image: url("../img/icon-phone.svg")
+    }
+
+    &--email::after {
+      content: "";
+      display: inline-block;
+      height: 58px;
+      width: 58px;
+      background-color: @inputGray;
+      background-repeat: no-repeat;
+      background-image: url("../img/icon-mail.svg")
+    }
+  }
+}
