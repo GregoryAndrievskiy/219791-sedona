@@ -14,8 +14,8 @@
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 19px;
-    line-height: 20px;
+    font-size: 30px;
+    line-height: 18px;
     color: @black;
     margin-top: 37px;
     margin-bottom: 30px;
@@ -28,7 +28,7 @@
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 34px;
-    color: @black;
+    color: @subGrey;
   }
 
   &__player {
@@ -81,6 +81,7 @@
     &--replay {
       margin-left: 23px;
     }
+
     &--fullscreen {
       height: 24px;
       width: 21px;
@@ -93,13 +94,13 @@
 
   .presentation {
     width: 768px;
+    
+    &__title {
+      line-height: 30px;
+    }
 
     &__player {
       top: 546px;
-    }
-
-    &__video {
-
     }
 
     &__screen {
@@ -111,13 +112,13 @@
 @media (min-width: 1240px) {
   .presentation {
     width: 1240px;
+    
+    &__title {
+      line-height: 30px;
+    }
 
     &__player {
       top: 567px;
-    }
-
-    &__video {
-
     }
 
     &__screen {

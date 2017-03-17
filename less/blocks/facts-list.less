@@ -7,7 +7,7 @@
   text-align: center;
 
   &__divider {
-    margin-top: 27px;
+    margin-top: 26px;
     margin-bottom: 0px;
     margin-left: 20px;
     margin-right: 20px;
@@ -18,17 +18,17 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
-    line-height: 4px;
+    line-height: 26px;
     color: @white;
     margin-top: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 9px;
     padding-left: 20px;
     padding-right: 20px;
 
     &--font-black {
       color: @black;
       margin-top: 0px;
-      margin-bottom: 27px;
+      margin-bottom: 8px;
     }
   }
 
@@ -37,14 +37,13 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
-    line-height: 4px;
+    line-height: 21px;
     margin-top: 0px;
     color: @white;
 
     &--font-black {
       margin-top: 0px;
-      color: @black;
-      line-height: 4px;
+      color: @subGrey;
     }
   }
 
@@ -54,16 +53,15 @@
     text-align: center;
     font-size: 14px;
     line-height: 21px;
-    margin-top: 24px;
-    margin-bottom: 35px;
+    margin-top: 16px;
+    margin-bottom: 27px;
     color: @white;
     padding-left: 20px;
     padding-right: 20px;
 
     &--font-black {
-      line-height: 21px;
-      margin-bottom: 13px;
-      color: @black;
+      margin-bottom: 24px;
+      color: @subGrey;
     }
   }
 
@@ -80,26 +78,39 @@
       }
 
       &--bridge {
-      display: inline-block;
+        display: inline-block;
         height: 259px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
         background-position: bottom right;
         background-size: 100% auto;
         background-repeat: no-repeat;
       }
+      
+      &--devils {
+        padding-bottom: 12px;
+      }
+      
+      &--comforts {
+        height: 416px;
+      }
 
     &:first-child {
-      padding-top: 68px;
+      padding-top: 56px;
+      height: 174px;
     }
 
     &--bg-blue {
       background-color: @bgBlue;
-      padding-top: 30px;
-      padding-top: 30px;
+      padding-top: 18px;
+
+      &:first-child {
+        padding-top: 56px;
+        height: 174px;
+      }
     }
 
     &--bg-grey {
-      padding-top: 38px;
+      padding-top: 28px;
       background-color: @bgGrey;
     }
   }
@@ -134,7 +145,6 @@
       &--comforts {
         order: -2;
       }
-
     }
   }
 }
@@ -146,15 +156,17 @@
     flex-wrap: wrap;
 
     &__title {
+      font-size: 21px;
+
       &--font-black {
         font-size: 21px;
-        line-height: 30px;
         padding-left: 50px;
         padding-right: 50px;
       }
     }
 
     &__subtitle {
+
       &--font-black {
         margin-top: 0px;
         padding-left: 50px;
@@ -183,7 +195,7 @@
       }
 
       &--overview {
-          width: 512px;
+        width: 512px;
         background-image: url("../img/photo-city@1x.jpg");
         background-position: center right;
         background-size: auto 100%;
@@ -191,7 +203,7 @@
       }
 
       &--bridge {
-      display: block;
+        display: block;
         width: 512px;
         height: 256px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
@@ -210,20 +222,22 @@
     flex-wrap: wrap;
 
     &__title {
+      font-size: 21px;
+
       &--font-black {
         font-size: 21px;
-        line-height: 30px;
         padding-left: 50px;
         padding-right: 50px;
       }
     }
 
     &__subtitle {
+
       &--font-black {
+        font-size: 21px;
         margin-top: 0px;
         padding-left: 50px;
         padding-right: 50px;
-        word-wrap: break-word;
       }
     }
 
@@ -238,13 +252,6 @@
         width: 1240px;
       }
 
-      &--bg-blue {
-
-          &:last-child {
-
-        }
-      }
-
       &--bg-grey {
         padding-top: 23px;
         height: 220px;
@@ -254,7 +261,7 @@
       }
 
       &--overview {
-          width: calc(1240px * 2 / 3);
+        width: calc(1240px * 2 / 3);
         background-image: url("../img/photo-city@1x.jpg");
         background-position: center right;
         background-size: 100% auto;
@@ -262,7 +269,7 @@
       }
 
       &--bridge {
-      display: block;
+        display: block;
         width: calc(1240px * 2 / 3);
         height: 256px;
         background-image: url("../img/photo-4-mobile@1x.jpg");

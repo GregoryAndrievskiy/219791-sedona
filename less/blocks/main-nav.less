@@ -1,5 +1,4 @@
 .main-nav {
-
   text-align: center;
 
   &--closed {
@@ -13,7 +12,6 @@
   &--nojs {
     display: block;
   }
-
 
   &__items {
     display: block;
@@ -30,7 +28,8 @@
     text-decoration: none;
     font-family: PTSansBold, Arial, sans-serif;
     font-size: 18px;
-    line-height: 54px;
+    line-height: 40px;
+    padding: 7px
   }
 
   &__item {
@@ -65,7 +64,6 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1240px) {
 
   .main-nav {
@@ -73,24 +71,25 @@
     width: 768px;
     position: absolute;
     display: block;
+    
+    &__wrapper {
+     padding-top: 8px;
+    }
 
     &__item {
       border: none;
-      min-width: 110px;
-      height: 40px;
     }
 
     &__items {
-
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       background: @white;
     }
 
     &__link {
       color: @black;
       font-size: 14px;
-      line-height: 53px;
+      line-height: 26px;
 
       &:hover {
         color: @navHovF;
@@ -131,12 +130,9 @@
 
     &__item {
       border: none;
-      min-width: 110px;
-      height: 40px;
     }
 
     &__items {
-
       display: flex;
       justify-content: space-around;
       background: @white;
@@ -145,7 +141,7 @@
     &__link {
       color: @black;
       font-size: 14px;
-      line-height: 53px;
+      line-height: 26px;
 
       &:hover {
         color: @navHovF;

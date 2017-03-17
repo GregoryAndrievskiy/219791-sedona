@@ -2,9 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-
     <title>Форма отзыва</title>
-
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -41,8 +39,12 @@
         </div>
       </header>
       <section class="main">
-        <h1 class="title">Оставьте свой отзыв</h1>
-        <p class="subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="intro">
+          <div class="intro__form">
+            <h1 class="intro__title">Оставьте свой отзыв</h1>
+            <p class="intro__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
         <form class="form" action="https://echo.htmlacademy.ru/">
           <section class="form__wrapper">
             <div class="form__block form__block--name">
@@ -98,6 +100,7 @@
               <h2 class="form__title">Опишите свои эмоции:</h2>
               <textarea class="form__textarea" rows="4">Опишите подробно все свои восторги</textarea>
               <input class="form__submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+              <span class="form__required">*-Обязательные поля</span>
             </div>
           </section>
         </form>
