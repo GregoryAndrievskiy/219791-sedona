@@ -4,34 +4,42 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 320px;
   border-bottom: 1px solid @photoBorderTop;
 
   &__item {
     border-top: 1px solid @photoBorderTop;
-
-  }
-
-  &__figure {
-    margin: 0;
-    padding: 0;
+    width: 320px;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
     &__photo {
-    padding: 22px 0px 0px 21px;
+    display: inline-block;
+    width: 88%;
+    padding: 0;
+    margin: 0;
+    padding-top: 22px;
   }
 
   &__caption {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding-top: 15px;
-
   }
 
   &__name {
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 24px;
     padding-left: 20px;
-    display: block;
     text-align: left;
     margin-bottom: 7px;
   }
@@ -39,20 +47,118 @@
   &__author {
     font-family: PTSans, Arial, sans-serif;
     font-size: 14px;
+    line-height: 24px;
     padding-left: 20px;
-    display: block;
     text-align: left;
     margin-bottom: 15px;
+    color: @subGrey;
   }
 
   &__like {
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 24px;
     padding-left: 20px;
-    display: block;
     text-align: left;
     margin-left: 37px;
     margin-bottom: 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .gallery-list {
+    flex-direction: row;
+    width: 648px;
+    border: none;
+    align-items: center;
+
+    &__item {
+      border-top: none;
+      height: 348px;
+      width: 324px;
+      background-color: @Grey;
+
+      &:first-child {
+      width: 768%;
+      height: 480px;
+      }
+
+      &:nth-child(3) {
+        background-color: @photoGrey;
+      }
+    }
+
+    &__photo {
+      padding: 0;
+      width: 100%;
+    }
+
+    &__caption {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 80px;
+      width: 100%;
+    }
+
+    &__text {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__like {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__name {
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .gallery-list {
+    width: 1200px;
+    flex-direction: row;
+    border: none;
+
+    &__caption {
+      color: @white;
+      position: absolute;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 0px;
+      width: 100%;
+    }
+
+    &__item {
+      position: relative;
+      border-top: none;
+      width: 400px;
+      height: 270px;
+      margin: 0;
+      padding: 0;
+
+      &:first-child {
+        width: 1200px;
+        height: 400px;
+      }
+    }
+
+    &__photo {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
   }
 }

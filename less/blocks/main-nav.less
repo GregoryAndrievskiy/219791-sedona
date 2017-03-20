@@ -1,5 +1,17 @@
 .main-nav {
-  text-align: right;
+  text-align: center;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 
   &__items {
     display: block;
@@ -10,18 +22,20 @@
   }
 
   &__link {
+    display: inline-block;
     text-transform: uppercase;
     color: @white;
     text-decoration: none;
     font-family: PTSansBold, Arial, sans-serif;
-    font-size: 1.125em;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 7px
   }
 
   &__item {
-      border-top: 1px solid @navBorderTop;
+    border-top: 1px solid @navBorderTop;
     border-bottom: 1px solid @navBorderBottom;
     text-align: center;
-    line-height: 53px;
 
     &:first-child {
       border-top: none;
@@ -29,6 +43,131 @@
 
     &:last-child {
       border-bottom: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .main-nav {
+
+    &__item {
+
+      &:hover {
+        background-color: @navHov;
+      }
+
+      &:active {
+        background-color: @navDown;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .main-nav {
+    z-index: 2;
+    width: 768px;
+    position: absolute;
+    display: block;
+
+    &__wrapper {
+      padding-top: 8px;
+    }
+
+    &__item {
+      border: none;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      background: @white;
+    }
+
+    &__link {
+      color: @black;
+      font-size: 14px;
+      line-height: 26px;
+
+      &:hover {
+        color: @navHovF;
+      }
+
+      &--active {
+        color: @navAct;
+
+        &:hover {
+          color: @navActHov;
+        }
+
+        &:active {
+          color: @navDownF;
+        }
+
+        &:active {
+          color: @navActDown;
+        }
+      }
+    }
+
+    &__logo {
+      position: relative;
+      transform: none;
+      top: 0;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .main-nav {
+    z-index: 2;
+    width: 1200px;
+    position: absolute;
+    display: block;
+
+    &__item {
+      border: none;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: space-around;
+      background: @white;
+    }
+
+    &__link {
+      color: @black;
+      font-size: 14px;
+      line-height: 26px;
+
+      &:hover {
+        color: @navHovF;
+      }
+
+      &:active {
+        color: @navDownF;
+      }
+
+      &--active {
+        color: @navAct;
+
+        &:hover {
+          color: @navActHov;
+        }
+
+        &:active {
+          color: @navActDown;
+        }
+      }
+    }
+
+    &__logo {
+      position: relative;
+      transform: none;
+      top: 0;
     }
   }
 }

@@ -1,17 +1,28 @@
 .presentation {
   position: relative;
-  margin-bottom: 140px;
+  margin-bottom: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__video {
+    width: 320px;
+    height: 200px;
+    background-image: url("../img/video-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
 
   &__title {
     display: block;
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 19px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 26px;
     color: @black;
-    margin-top: 37px;
-    margin-bottom: 30px;
+    margin-top: 34px;
+    margin-bottom: 11px;
   }
 
   &__description {
@@ -21,18 +32,18 @@
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 34px;
-    color: @black;
+    color: @subGrey;
   }
 
   &__player {
     z-index: 2;
     position: absolute;
-    top: 313px;
-    left: 21px;
+    bottom: -68px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 94%;
+    align-items: center;
+    width: 100%;
   }
 
   &__dot {
@@ -51,7 +62,7 @@
     justify-content: flex-start;
     width: 280px;
     height: 66px;
-    background-color: @videoControlGray;
+    background-color: @Grey;
   }
 
   &__item {
@@ -71,10 +82,72 @@
     &--replay {
       margin-left: 23px;
     }
+
     &--fullscreen {
       height: 24px;
       width: 21px;
       margin-left: 150px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .presentation {
+    margin-top: 27px;
+    margin-bottom: 66px;
+    width: 768px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+
+    &__video {
+      margin-top: 48px;
+      width: 648px;
+      height: 500px;
+    }
+
+    &__player {
+      bottom: 0px;
+      width: 648px;
+    }
+
+    &__description {
+      width: 370px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .presentation {
+    width: 1200px;
+    margin-bottom: 113px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 66px;
+      margin-bottom: 14px;
+    }
+
+    &__description {
+      width: 370px;
+      margin-bottom: 70px;
+      width: 420px;
+    }
+
+    &__video {
+      width: 800px;
+      height: 500px;
+    }
+
+    &__player {
+      width: 800px;
+      bottom: 0px;
     }
   }
 }

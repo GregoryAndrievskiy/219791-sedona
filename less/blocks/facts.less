@@ -1,8 +1,47 @@
 .facts {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3px;
+  align-items: center;
 
   &__triangle {
+    width: 100%;
+    max-width: 420px;
     position: absolute;
-    top: -4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+
+  .facts {
+
+    padding-top: 0px;
+
+    &__triangle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .facts {
+    padding-top: 6px;
+
+    &__item {
+      height: 259px;
+
+      &--bg-blue:first-child {
+        padding-top: 0px;
+        height: 256px;
+      }
+    }
+
+    &__triangle {
+
+      display: none;
+    }
   }
 }

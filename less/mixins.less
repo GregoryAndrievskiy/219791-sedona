@@ -17,3 +17,18 @@
     font-style: bold;
   }
 }
+
+.placeholder(@color) {
+
+  &::-webkit-input-placeholder {
+    color: @color
+  }
+
+  &:-ms-input-placeholder{
+    color: @color
+  }
+
+  &::-ms-input-placeholder {
+    color: @color
+  }
+}
