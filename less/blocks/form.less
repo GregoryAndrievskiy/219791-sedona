@@ -1,31 +1,67 @@
 .form {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid @photoBorderTop;
 
 =======
+=======
+
+  &__divider {
+    width: 100%;
+    border-bottom: 1px solid @Grey;
+  }
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
 
   &__places {
-	  display: flex;
-	  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border-bottom: 1px solid @photoBorderTop;
+    align-items: center;
   }
+<<<<<<< HEAD
   
 >>>>>>> module4-task1
+=======
+
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   &__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-top: 1px solid @photoBorderTop;
-    padding: 20px;
+    border: none;
+    width: 280px;
+
+    &--name {
+      height: 286px;
+      margin: 0;
+      padding: 0;
+      margin-top: 17px;
+    }
+
+    &--contacts {
+      height: 283px;
+      margin-top: 17px;
+    }
+
+    &--opinion {
+      margin-top: 17px;
+      height: 256px;
+      position: relative;
+    }
+
+    &--places {
+      height: 375px;
+      margin-top: 17px;
+    }
+
+    &--text {
+      margin-top: 17px;
+      height: 362px;
+    }
   }
 
   &__title {
@@ -33,14 +69,17 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
-    margin-top: 9px;
-    margin-bottom: 26px;
-    line-height: 1.4em;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
   }
 
   &__label {
+    display: flex;
     font-family: PTSans, Arial, sans-serif;
     text-transform: uppercase;
+<<<<<<< HEAD
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 45px;
@@ -51,28 +90,54 @@
 =======
     &--test {
 >>>>>>> module4-task1
+=======
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    align-items: baseline;
+
+    &--test {
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
       font-family: PTSansBold, Arial, sans-serif;
       text-transform: none;
-      font-size: 17px;
+      font-size: 18px;
       margin-top: 0px;
+<<<<<<< HEAD
       margin-bottom: 26px;
       line-height: 41px;
 <<<<<<< HEAD
 
 =======
 >>>>>>> module4-task1
+=======
+      margin-bottom: 10px;
+      line-height: 26px;
     }
 
-    &--radio:before {
-      content: "";
-      display: inline-block;
-      height: 60px;
-      width: 60px;
-      margin: 0px 0px -25px 0px;
-      background-color: @bgGrey;
-      border-radius: 100px;
+    &--tel {
+      position: relative;
+      flex-direction: column;
+      padding-left: 5px;
+      padding-right: 57px;
+      margin-bottom: 0px;
+      margin-top: 42px;
+      margin-left: 17px;
+      margin-bottom: 7px;
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
     }
 
+    &--email {
+      position: relative;
+      flex-direction: column;
+      padding-left: 5px;
+      padding-right: 57px;
+      margin-top: 15px;
+      margin-left: 17px;
+      margin-bottom: 7px;
+    }
+
+<<<<<<< HEAD
 <<<<<<< HEAD
     &--checkbox:before {
       content: "";
@@ -88,6 +153,21 @@
 
 	}
 >>>>>>> module4-task1
+=======
+    &--radio {
+      padding-left: 80px;
+      margin-top: 34px;
+      margin-bottom: 43px;
+      position: relative
+    }
+
+    &--checkbox {
+      padding-left: 78px;
+      margin-top: 26px;
+      margin-bottom: 28px;
+      position: relative
+    }
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   }
 
   &__input {
@@ -97,25 +177,50 @@
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: none;
     font-size: 18px;
+    line-height: 26px;
+    margin-left: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 21px;
+    width: 100%;
+
+    .placeholder(@black);
+
+    &--contacts {
+      margin-left: 0px;
+      width: 260px;
+    }
   }
 
   &__textarea {
-    margin-bottom: 20px;
+    font-family: PTSansBold, Arial, sans-serif;
+    background-color: @Grey;
+    margin-top: 42px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 26px;
+    border: none;
+    resize: none;
+    padding: 20px;
+    width: 240px;
   }
 
   &__submit {
-    display: block;
+    display: inline-block;
     font-family: PTSansBold, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 21px;
+    line-height: 26px;
     border: none;
     height: 50px;
     background: none;
     display: inline-block;
     color: @white;
     background-color: @bgBlue;
+    width: 280px;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   &__checkbox {
@@ -124,139 +229,405 @@
   
   &__checkbox {
 >>>>>>> module4-task1
+=======
+
+  &__checkbox {
+    display: none;
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   }
 
   &__radio {
     display: none;
   }
+
+  &__required {
+    display: none;
+    font-family: PTSans, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
+    color: @subGrey;
+  }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
 
 @media (min-width: 768px) and (max-width: 1240px) {
   .form {
-  
-    &__places {
-	  display: flex;
-	  flex-direction: column;
-	  flex-wrap: wrap;
-	  height: 180px;
-	}
-  
+
     &__wrapper {
-	  display: flex;
+      align-items: flex-start;
+      width: 648px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 51px;
+    }
+
+    &__divider {
+      display: none;
+    }
+
+    &__title {
+      font-size: 21px;
+      width: 324px;
+      padding: 0;
+      margin-bottom: 38px;
+
+      &--contacts {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__places {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 180px;
+    }
+
+    &__wrapper {
+      display: flex;
       flex-direction: row;
-	  flex-wrap: wrap;
-	}
-	
-	&__name {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  align-items: center;
-	}
-	
-	&__opinion {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  align-items: center;
-	}
-	
-	&__contacts {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	}
-	
-	&__block {
-	  border: none;
-	  
-	  &--name{
-	  
-	  }
-	  
-	  &--contacts {
-	    width: 100%;
-	  }
-	  
-	  &--opinion {
-	    order: -2;
-	  }
-	  
-	  &--places {
-	    width: 100%;
-	  }
-	  
-	  &--text {
-	    width: 100%;
-	  }
-	}
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      width: 324px;
+      align-items: flex-end;
+    }
+
+    &__opinion {
+      display: flex;
+      flex-direction: column;
+      width: 324px;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__places {
+      height: 180px;
+      width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__block {
+      width: 324px;
+      border: none;
+
+      &--name {
+        margin-top: 0;
+        height: auto;
+      }
+
+      &--contacts {
+        padding: 0;
+        margin: 0;
+        margin-top: 66px;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      &--opinion {
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+        order: -2;
+        height: auto;
+      }
+
+      &--places {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 306px;
+      }
+
+      &--text {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 85px;
+      }
+    }
+
+    &__textarea {
+      margin-top: 17px;
+      margin-bottom: 58px;
+      width: 608px;
+      height: 122px;
+    }
+
+    &__submit {
+      display: inline-block;
+      width: 324px;
+    }
+
+    &__required {
+      display: inline-block;
+    }
+
+    &__label {
+      padding-left: 0px;
+      width: 100%;
+
+      &--name {
+        width: 82%;
+        margin-bottom: 0px;
+      }
+
+      &--radio {
+        width: 88%;
+        margin-bottom: 19px;
+        margin-left: 76px;
+      }
+
+      &--tel {
+        margin-top: 24px;
+      }
+
+      &--email {
+        margin-top: 24px;
+      }
+
+      &--checkbox {
+        padding-left: 80px;
+        width: 175px;
+        margin-top: 17px;
+        margin-bottom: 46px;
+      }
+    }
+
+    &__input {
+
+      &--contacts {
+        width: 570px;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: space-between;
+      height: 58px;
+    }
+
+    &__submit {
+      height: 58px;
+    }
+
+    &__required {
+      padding-top: 19px;
+    }
   }
 }
 
 @media (min-width: 1240px) {
   .form {
-  
-    &__places {
-	  display: flex;
-	  flex-direction: row;
-	  flex-wrap: wrap;
-	  width: 100%;
-	  justify-content: space-around;
-	}
-	
-	&__contacts {
-	  display: flex;
-	  flex-direction: row;
-	  flex-wrap: wrap;
-	  width: 100%;
-	}
-	
-	&__name {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  align-items: center;
-	}
-	
-	&__opinion {
-	  display: flex;
-	  flex-direction: column;
-	  width: 100%;
-	  align-items: center;
-	}
 
     &__wrapper {
-	  display: flex;
+      align-items: flex-start;
+      width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 74px;
+    }
+
+    &__divider {
+      display: none;
+    }
+
+    &__title {
+      font-size: 21px;
+      width: 324px;
+      padding: 0;
+      margin-bottom: 38px;
+
+      &--contacts {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__places {
+      display: flex;
       flex-direction: row;
-	  flex-wrap: wrap;
-	}
-	
-	&__block {
-	  border: none;
-	  
-	  &--name{
-	    width: 40%;
-	  }
-	  
-	  &--contacts {
-	    width: 100%;
-	  }
-	  
-	  &--opinion {
-	    order: -2;
-		width: 40%;
-	  }
-	  
-	  &--places {
-	    width: 100%;
-	  }
-	  
-	  &--text {
-	    width: 100%;
-	  }
-	}
+      flex-wrap: no-wrap;
+      height: 180px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      width: 480px;
+      align-items: flex-end;
+    }
+
+    &__opinion {
+      display: flex;
+      flex-direction: column;
+      width: 480px;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: row;
+      width: 960px;
+      margin-top: 72px;
+    }
+
+    &__places {
+      height: 180px;
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: row;
+    }
+
+    &__block {
+      width: 324px;
+      border: none;
+
+      &--name {
+        margin-top: 0;
+        height: auto;
+      }
+
+      &--contacts {
+        padding: 0;
+        margin: 0;
+        margin-top: 66px;
+        width: 100%;
+        margin-bottom: 25px;
+        height: 184px;
+      }
+
+      &--opinion {
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+        order: -2;
+        height: auto;
+      }
+
+      &--places {
+        padding: 0;
+        margin: 0;
+        width: 960px;
+        height: 216px;
+      }
+
+      &--text {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 85px;
+      }
+    }
+
+    &__textarea {
+      margin-top: 17px;
+      margin-bottom: 58px;
+      width: 960px;
+      height: 122px;
+    }
+
+    &__submit {
+      display: inline-block;
+      width: 324px;
+    }
+
+    &__required {
+      display: inline-block;
+    }
+
+    &__label {
+      padding-left: 0px;
+
+      &--name {
+        width: 82%;
+        margin-bottom: 0px;
+      }
+
+      &--radio {
+        width: 88%;
+        margin-bottom: 19px;
+        margin-left: 76px;
+      }
+
+      &--tel {
+        margin-left: 0px;
+        margin-top: 17px;
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 91px;
+      }
+
+      &--email {
+        margin-left: 150px;
+        margin-top: 17px;
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 190px;
+      }
+
+      &--checkbox {
+        padding-left: 80px;
+        width: 160px;
+        margin-top: 17px;
+        margin-bottom: 46px;
+      }
+    }
+
+    &__input {
+
+      &--contacts {
+        width: 307px;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: space-between;
+      height: 58px;
+    }
+
+    &__submit {
+      height: 58px;
+      width: 480px;
+    }
+
+    &__required {
+      padding-top: 19px;
+    }
+
+    &__desktop {
+      display: none;
+    }
   }
 }
+<<<<<<< HEAD
 >>>>>>> module4-task1
+=======
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86

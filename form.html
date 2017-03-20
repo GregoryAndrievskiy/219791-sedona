@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>Главная</title>
 =======
     <title>Форма отзыва</title>
 >>>>>>> module4-task1
+=======
+    <title>Форма отзыва</title>
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -127,6 +132,8 @@
       </div>
     </footer>
 =======
+=======
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
     <div class="body__wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -151,87 +158,88 @@
               <img class="page-header__burger-icon" src="img/icon-menu.svg">
             </button>
           </div>
-          <div class="page-header__background page-header__background--index">
-            <img class="page-header__sedona-index" src="img/text-sedona-index.svg">
+          <div class="page-header__background">
+            <img class="page-header__sedona" src="img/text-sedona.svg">
             <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg">
-			<img class="page-header__triangle-mobile" src="img/bg-intro-triangle-mobile.svg">
+            <img class="page-header__triangle-mobile" src="img/bg-intro-triangle-mobile.svg">
           </div>
         </div>
       </header>
       <section class="main">
-        <h1 class="title">Оставьте свой отзыв</h1>
-        <p class="subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="intro intro__form">
+          <h1 class="intro__title">Оставьте свой отзыв</h1>
+          <p class="intro__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
         <form class="form" action="https://echo.htmlacademy.ru/">
-          <section class="form__wrapper"> 
-			<div class="form__block form__block--name">
-              <h2 class="form__title">Представьтесь:</h2>
-			  <div class="form__name">
-              <label class="form__label" for="name">Имя*:
-                <input class="form__input" type="name" name="name" value="Петр" required>
+          <section class="form__wrapper">
+            <div class="form__divider"></div>
+            <fieldset class="form__block form__block--name">
+              <legend class="form__title">Представьтесь:</legend>
+              <div class="form__name">
+              <label class="form__label form__label--name" for="name">Имя*:
+                <input class="form__input" type="name" name="name"  placeholder="Петр" required>
               </label>
-              <label class="form__label for="name">Фамилия*:
-                <input class="form__input" type="surname" name="surname" value="Иванов" required>
+              <label class="form__label form__label--name" for="name">Фамилия*:
+                <input class="form__input" type="surname" name="surname" placeholder="Иванов" required>
               </label>
-              <label class="form__label for="name">Отчество:
-                <input class="form__input" type="patronymic" name="patronymic" value="Александрович">
-              </label>
-            </div>
-			</div>
-            <div class="form__block form__block--contatcs">
-              <h2 class="form__title">Контактная информация:</h2>
-			  <div class="form__contacts">
-              <label class="form__label">Контактный телефон*:
-                <input class="form__input" type="tel" name="tel" placeholder="Введите телефон" required>
-              </label>
-              <label class="form__label">Электронная почта*:
-                <input class="form__input" type="email" name="email" placeholder="Введите e-mail" required>
+              <label class="form__label form__label--name" for="name">Отчество:
+                <input class="form__input" type="patronymic" name="patronymic" placeholder="Александрович">
               </label>
               </div>
-			</div>
-			<div class="form__block form__block--opinion">
-			  <h2 class="form__title">Ваше общее впечатление:</h2>
-			  <div class="form__opinion">
-			  <label class="form__label form__label--test form__label--radio for="positive">
-                <input class="form__radio" type="radio" name="rating" value="positive" checked>Скорее положительное
-		  	  </label>
-              <label class="form__label form__label--test  form__label--radio for="negative">
-			    <input class="form__radio" type="radio" name="rating" value="negative" >Скорее отрицательное
-              </label>
-              <label class="form__label form__label--test  form__label--radio for="average">
-                <input class="form__radio" type="radio" name="rating" value="average" >Затрудняюсь ответить
-              </label>
-            </div>
-            </div>
-            <div class="form__block form__block--places">
-              <h2 class="form__title">Посещенные достопримечательности:</h2>
-			  <div class="form__places">
-              <label class="form__label form__label--test  form__label--checkbox for="devilsbridge">
-                <input class="form__checkbox" type="checkbox" name="devilsbridge" checked>Мост Дьявола
-              </label>
-              <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
-                <input class="form__checkbox" type="checkbox" name="slidepark" checked>Слайд-парк
-              </label>
-              <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
-                <input class="form__checkbox" type="checkbox" name="bellhill">Гора-Колокол
-              </label>
-              <label class="form__label form__label--test form__label--checkbox for="devilsbridge">
-                <input class="form__checkbox" type="checkbox" name="redrocks" checked>Красные скалы
-              </label>
-			  </div>
-            </div>
-            <div class="form__block form__block--text">
-              <h2 class="form__title">Опишите свои эмоции:</h2>
-              <textarea class="form__textarea" rows="4">Опишите подробно все свои восторги</textarea>
-              <input class="form__submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
-            </div>
+            </fieldset>
+            <div class="form__divider"></div>
+            <fieldset class="form__block form__block--contacts">
+              <legend class="form__title form__title--contacts">Контактная информация:</legend>
+              <div class="form__contacts">
+              <label class="form__label form__label--tel" for="tel"><span class="form__desktop">Контактный</span> телефон*:</label>
+              <input class="form__input form__input--contacts" type="tel" name="tel" placeholder="Введите телефон" id="tel"required>
+              <label class="form__label form__label--email" for="email">Электронная почта*:</label>
+              <input class=" form__input form__input--contacts" type="email" name="email" placeholder="Введите e-mail" id="email" required>
+              </div>
+            </fieldset>
+            <div class="form__divider"></div>
+            <fieldset class="form__block form__block--opinion">
+              <legend class="form__title">Ваше общее впечатление:</legend>
+              <div class="form__opinion">
+              <input class="form__radio" type="radio" name="opinion" id="positive" value="positive" checked>
+              <label class="form__label form__label--test form__label--radio" for="positive">Скорее положительное</label>
+              <input class="form__radio" type="radio" name="opinion" id="negative" value="negative">
+              <label class="form__label form__label--test  form__label--radio" for="negative">Скорее отрицательное</label>
+              <input class="form__radio" type="radio" name="opinion" id="average" value="average">
+              <label class="form__label form__label--test  form__label--radio" for="average">Затрудняюсь ответить</label>
+              </div>
+            </fieldset>
+            <div class="form__divider"></div>
+            <fieldset class="form__block form__block--places">
+              <legend class="form__title">Посещенные достопримечательности:</legend>
+              <div class="form__places">
+              <input class="form__checkbox" type="checkbox" id="devilsbridge" checked>
+              <label class="form__label form__label--test  form__label--checkbox" for="devilsbridge">Мост Дьявола</label>
+              <input class="form__checkbox" type="checkbox" id="slidepark" checked>
+              <label class="form__label form__label--test form__label--checkbox" for="slidepark">Слайд-парк</label>
+              <input class="form__checkbox" type="checkbox" id="bellhill">
+              <label class="form__label form__label--test form__label--checkbox" for="bellhill">Гора-Колокол</label>
+              <input class="form__checkbox" type="checkbox" id="redrocks" checked>
+              <label class="form__label form__label--test form__label--checkbox" for="redrocks">Красные скалы</label>
+              </div>
+            </fieldset>
+            <div class="form__divider"></div>
+            <fieldset class="form__block form__block--text">
+              <legend class="form__title">Опишите свои эмоции:</legend>
+              <textarea class="form__textarea" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="form__button">
+                <input class="form__submit" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+                <span class="form__required">*-Обязательные поля</span>
+              </div>
+            </fieldset>
           </section>
-		</form>
+        </form>
       </section>
         <footer class="page-footer">
           <div class="page-footer__wrapper">
             <p class="page-footer__tag">
               <b>#VISITSEDONA</b>
-             </p>
+              </p>
           <div class="page-footer__social">
             <ul class="social">
               <li class="social__item">
@@ -253,6 +261,9 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+<<<<<<< HEAD
 >>>>>>> module4-task1
+=======
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   </body>
 </html>

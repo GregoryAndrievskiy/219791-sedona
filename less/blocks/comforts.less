@@ -2,6 +2,7 @@
   background-color: @white;
   list-style: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 0;
   padding: 0px;
   padding-top: 21px;
@@ -43,6 +44,8 @@
     line-height: 1.5em;
     margin-left: 70px;
 =======
+=======
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -53,18 +56,17 @@
 
   &__item {
     padding: 0px;
-	margin-top: 0px;
+    margin-top: 0px;
     display: inline-block;
-	margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   &__name {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 26px;
     display: flex;
-	flex-direction: row;
-	text-align: left;
-	
+    flex-direction: row;
+    text-align: left;
   }
 
   &__icon {
@@ -79,6 +81,7 @@
     text-transform: uppercase;
     text-align: left;
     font-size: 18px;
+    line-height: 26px;
   }
 
   &__description {
@@ -91,7 +94,8 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
-	margin-left: 50px;
+    margin-left: 50px;
+    color: @subGrey;
   }
 }
 
@@ -101,22 +105,40 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-	justify-content: center;
-	height: 286px;
-	
-	&__name {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  margin: 0;
-	}
-	
-	&__description {
-      margin: 0;
-	  padding: 0;
-	  text-align: center;
+    justify-content: space-around;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
-	}
+    &__item {
+      margin-top: 102px;
+      width: 170px;
+    }
+
+    &__item--house {
+      order: -1;
+    }
+
+    &__item--gifts {
+      order: 1;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__description {
+      margin: 0;
+      margin-top: 3px;
+      padding: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -126,27 +148,47 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-	justify-content: center;
-	height: 287px;
-	
-	&__item {
-	  padding-left: 60px;
-      padding-right: 60px;
-	}
+    justify-content: space-around;
+    height: 287px;
 
-	&__name {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  margin: 0;
-	}
-	
-	&__description {
+    &__item--house {
+      order: -1;
+    }
+
+    &__item--gifts {
+      order: 1;
+    }
+
+    &__item {
+      padding-left: 75px;
+      padding-right: 75px;
+      margin-top: 14px;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin: 0;
-	  padding: 0;
-	  text-align: center;
+      margin-top: 87px;
+    }
 
+<<<<<<< HEAD
 	}
 >>>>>>> module4-task1
+=======
+    &__title {
+      font-size: 21px;
+    }
+
+    &__description {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      padding: 0;
+      text-align: center;
+      margin-top: 3px;
+    }
+>>>>>>> 272e74cf0eb883ac7b407ac39b6f253b45b70f86
   }
 }
