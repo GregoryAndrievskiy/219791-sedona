@@ -16,6 +16,8 @@
 @media (min-width: 768px) and (max-width: 1240px) {
 
   .facts {
+    
+    padding-top: 0px;
 
     &__triangle {
       display: none;
@@ -26,8 +28,19 @@
 @media (min-width: 1240px) {
 
   .facts {
+    padding-top: 6px;
+
+    &__item {
+      height: 259px;
+
+      &--bg-blue:first-child {
+        padding-top: 0px; 
+	    height: 256px;
+      }
+    }
 
     &__triangle {
+
       display: none;
     }
   }

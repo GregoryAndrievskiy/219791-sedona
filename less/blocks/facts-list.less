@@ -63,6 +63,10 @@
       margin-bottom: 24px;
       color: @subGrey;
     }
+
+    &--tablet {
+      display: none;
+    }
   }
 
   &__item {
@@ -154,24 +158,41 @@
   .facts-list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 8px;
+    margin: 0px;
+
+    &__content {
+      padding-left: 14px;
+      padding-right: 14px;
+      margin: 0px;
+    }
 
     &__title {
       font-size: 21px;
+      margin-top: 45px;
+      padding-left: 23px;
+      padding-right: 22px;
 
       &--font-black {
         font-size: 21px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 39px;
+        padding-right: 39px;
       }
     }
 
     &__subtitle {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 22px;
 
       &--font-black {
-        margin-top: 0px;
-        padding-left: 50px;
-        padding-right: 50px;
-        word-wrap: break-word;
+        margin-top: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      &--tablet {
+        display: block;
       }
     }
 
@@ -180,18 +201,35 @@
     }
 
     &__item {
+      height: 256px;
       width: 256px;
 
       &--comforts {
         width: 768px;
+        height: 330px;
+      }
+
+      &--overview {
+        height: 256px;
+      }
+      
+      &--bg-blue {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      &--bg-blue:first-child {
+        padding-top: 0px;
+        height: 256px;
       }
 
       &--bg-grey {
-        padding-top: 23px;
-        height: 220px;
+        padding-top: 2px;
+        height: 233px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 21px;
       }
 
       &--overview {
@@ -220,21 +258,46 @@
   .facts-list {
     flex-direction: row;
     flex-wrap: wrap;
+    
+    &__content {
+      padding-left: 48px;
+      padding-right: 48px;
+      margin: 0px;
+
+      &--font-black {
+        padding-left: 21px;
+        padding-right: 21px;
+      }
+    }
 
     &__title {
       font-size: 21px;
+      padding-left: 77px;
+      padding-right: 76px;
+      padding-top: 14px;
 
       &--font-black {
+        margin-top: 0px;
         font-size: 21px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
       }
     }
 
     &__subtitle {
+      padding-top: 7px;
 
       &--font-black {
-        font-size: 21px;
+        margin-top: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      &--tablet {
+        display: block;
+      }
+
+      &--font-black {
         margin-top: 0px;
         padding-left: 50px;
         padding-right: 50px;
@@ -246,31 +309,38 @@
     }
 
     &__item {
-      width: calc(1240px / 3);
+      width: 400px;
 
       &--comforts {
-        width: 1240px;
+        width: 1200px;
+        height: 330px;
+      }
+
+      &--bg-blue:first-child {
+        padding-top: 17px;
+        height: 240px;
       }
 
       &--bg-grey {
-        padding-top: 23px;
-        height: 220px;
+        padding-top: 0px;
+        height: 235px;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
       &--overview {
-        width: calc(1240px * 2 / 3);
+        width: calc(1200px * 2 / 3);
         background-image: url("../img/photo-city@1x.jpg");
         background-position: center right;
         background-size: 100% auto;
         background-repeat: no-repeat;
+        height: 257px;
       }
 
       &--bridge {
         display: block;
-        width: calc(1240px * 2 / 3);
+        width: calc(1200px * 2 / 3);
         height: 256px;
         background-image: url("../img/photo-4-mobile@1x.jpg");
         background-position: bottom right;

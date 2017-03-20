@@ -7,9 +7,12 @@
       display: inline-block;
       height: 58px;
       width: 58px;
-      background-color: @inputGray;
+      background-color: @Grey;
       background-repeat: no-repeat;
       border-radius: 5px;
+      position: absolute;
+      left: 0px;
+      top: -15px;
     }
 
     & + .form__label--checkbox:hover::before {
@@ -21,7 +24,7 @@
     }
 
     &:checked + .form__label--checkbox::before {
-      background-color: @inputGray;
+      background-color: @Grey;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
       background-position: center;
@@ -43,9 +46,12 @@
       display: inline-block;
       height: 58px;
       width: 58px;
-      background-color: @inputGray;
+      background-color: @Grey;
       background-repeat: no-repeat;
       border-radius: 50%;
+      position: absolute;
+      left: 0px;
+      top: -15px;
     }
 
     & + .form__label--radio:hover::before {
@@ -57,7 +63,7 @@
     }
 
     &:checked + .form__label--radio::before {
-      background-color: @inputGray;
+      background-color: @Grey;
       background-image: url("../img/dot.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -79,9 +85,13 @@
       display: inline-block;
       height: 58px;
       width: 58px;
-      background-color: @inputGray;
+      background-color: @Grey;
       background-repeat: no-repeat;
-      background-image: url("../img/icon-phone.svg")
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      position: absolute;
+      right: 0px;
+      bottom: -65px;
     }
 
     &--email::after {
@@ -89,9 +99,61 @@
       display: inline-block;
       height: 58px;
       width: 58px;
-      background-color: @inputGray;
+      background-color: @Grey;
       background-repeat: no-repeat;
-      background-image: url("../img/icon-mail.svg")
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      position: absolute;
+      right: 0px;
+      bottom: -65px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+  .form {
+
+    &__checkbox {
+
+      & + .form__label--checkbox::before {
+        left: 0px;
+      }
+    } 
+
+    &__radio {
+
+      & + .form__label--radio::before {
+        left: -77px;
+      }
+    }
+
+    &__label {
+
+      &--tel::after {
+        right: 74px;
+      }
+
+      &--email::after {
+        right: 74px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .form {
+
+    &__label {
+
+      &--tel::after {
+        right: -323px;
+        bottom: -7px;
+      }
+
+      &--email::after {
+        right: -284px;
+        bottom: -7px;
+      }
     }
   }
 }

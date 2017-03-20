@@ -7,7 +7,7 @@
     font-style: normal;
   }
 }
-
+ 
 .PTSansBold() {
   @font-face {
     font-family: 'PTSansBold';
@@ -15,5 +15,20 @@
     src: url("../fonts/ptsansbold.woff2");
     font-weight: bold;
     font-style: bold;
+  }
+}
+
+.placeholder(@color) {
+
+  &::-webkit-input-placeholder {
+    color: @color
+  }
+
+  &:-ms-input-placeholder{
+    color: @color
+  }
+
+  &::-ms-input-placeholder {
+    color: @color
   }
 }
