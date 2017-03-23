@@ -11,6 +11,9 @@
     background-image: url("../img/video-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
@@ -21,8 +24,8 @@
     font-size: 18px;
     line-height: 26px;
     color: @black;
-    margin-top: 34px;
-    margin-bottom: 11px;
+    margin-top: 32px;
+    margin-bottom: 13px;
   }
 
   &__description {
@@ -31,101 +34,254 @@
     text-align: center;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     color: @subGrey;
+    width: 240px;
   }
 
   &__player {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
-    bottom: -68px;
+    bottom: -67px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
+  &__player-bg {
+    z-index: 0;
+    position: absolute;
+    bottom: -67px;
+    width: 280px;
+    height: 66px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: @Grey;
+  }
+  
   &__dot {
-    z-index: 5;
+    display: block;
+    z-index: 2;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: @bgGrey;
+    position: absolute;
+    left: 58px;
+    top: 18px;
   }
 
+  &__line {
+    z-index: 1;
+    width: 235px;
+    height: 3px;
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    background-color: @videoGrey;
+  }
+  
+  
   &__bar {
-    z-index: 3;
+    z-index: 0;
     width: 280px;
     height: 44px;
     background-color: fade(@black, 60%);
   }
 
-  &__control-bar {
+  &__replay {
     display: flex;
-    justify-content: flex-start;
-    width: 280px;
     height: 66px;
-    background-color: @Grey;
+    width: 66px;
   }
 
-  &__item {
-    margin-top: 11px;
-    margin-right: 22px;
-    z-index: 5;
-    display: inline-block;
+  &__panel {
+    height: 66px;
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  &__panel-item {
+    display: flex;
+    height: 66px;
+    width: 66px;
+  }
+
+  &__stitle {
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    fill: @videoGrey;
+
+    &:hover {
+      fill: @subGrey;
+    }
+
+    &:active {
+      fill: @videoAct;
+    }
+  }
+
+  &__rpl {
+    margin: auto;
+    height: 20px;
+    width: 22px;
+    fill: @videoGrey;
+    stroke: @videoGrey;
+
+    &:hover {
+      fill: @subGrey;
+      stroke: @subGrey;
+    }
+
+    &:active {
+      fill: @videoAct;
+      stroke: @videoAct;
+    }
+  }
+
+  &__fscr {
+    margin: auto;
     height: 21px;
     width: 21px;
+    fill: @videoGrey;
+    stroke: @videoGrey;
+    margin-right: 22px;
 
-    &--subtitles {
-      height: 20px;
-      width: 34px;
-      margin-left: 130px;
+    &:hover {
+      fill: @subGrey;
+      stroke: @subGrey;
     }
 
-    &--replay {
-      margin-left: 23px;
-    }
-
-    &--fullscreen {
-      height: 24px;
-      width: 21px;
-      margin-left: 150px;
+    &:active {
+      fill: @videoAct;
+      stroke: @videoAct;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .presentation__video {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
 
   .presentation {
-    margin-top: 27px;
-    margin-bottom: 66px;
+    margin-top: 31px;
+    margin-bottom: 57px;
     width: 768px;
 
     &__title {
       font-size: 30px;
       line-height: 30px;
-      margin-bottom: 16px;
-    }
-
-    &__video {
-      margin-top: 48px;
-      width: 648px;
-      height: 500px;
-    }
-
-    &__player {
-      bottom: 0px;
-      width: 648px;
+      margin-bottom: 14px;
     }
 
     &__description {
       width: 370px;
       margin-bottom: 25px;
     }
+
+    &__video {
+      margin-top: 48px;
+      width: 648px;
+      height: 500px;
+      background-image: url("../img/video-tablet@1x.jpg");
+    }
+
+    &__player {
+      bottom: 0px;
+      width: 648px;
+      height: 94px;
+      background-color: fade(@black, 60%);
+      margin: 0;
+      
+    }
+
+    &__control-bar {
+      width: 648px;
+      height: 94px;
+      background-color: fade(@black, 60%);
+    }
+
+    &__replay {
+      order: -2;
+    }
+    
+    &__bar {
+      order: -1;
+      width: 410px;
+      height: 94px;
+      background: none;
+      position: relative;
+    }
+    
+  &__dot {
+    display: block;
+    z-index: 2;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: @bgGrey;
+    position: absolute;
+    left: 112px;
+    top: 43px;
+  }
+
+  &__line {
+    z-index: 1;
+    width: 390px;
+    height: 3px;
+    position: absolute;
+    top: 46px;
+    left: -2px;
+    background-color: @videoGrey;
+  }
+    
+    &__player-bg {
+      display: none;
+    }
+    
+    &__replay {
+      z-index: 1;
+      height: 94px;
+      width: 94px;
+    }
+
+    &__panel {
+      z-index: 1;
+      height: 94px;
+      width: 144px;
+    }
+    
+    &__panel-item {
+      height: 94px;
+      width: 94px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .presentation__video {
+    background-image: url("../img/video-tablet@2x.jpg");
   }
 }
 
 @media (min-width: 1240px) {
+  
   .presentation {
     width: 1200px;
-    margin-bottom: 113px;
+    margin-bottom: 105px;
 
     &__title {
       font-size: 30px;
@@ -143,11 +299,83 @@
     &__video {
       width: 800px;
       height: 500px;
+      background-image: url("../img/video-desktop@1x.jpg");
     }
 
     &__player {
-      width: 800px;
       bottom: 0px;
+      width: 800px;
+      height: 94px;
+      background-color: fade(@black, 60%);
+      margin: 0;
     }
+
+    &__control-bar {
+      width: 800px;
+      height: 94px;
+      background-color: fade(@black, 60%);
+    }
+
+    &__replay {
+      order: -2;
+    }
+
+    &__bar {
+      order: -1;
+      width: 562px;
+      height: 94px;
+      background: none;
+      position: relative;
+    }
+
+  &__dot {
+    display: block;
+    z-index: 2;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: @bgGrey;
+    position: absolute;
+    left: 112px;
+    top: 43px;
+  }
+
+  &__line {
+    z-index: 1;
+    width: 538px;
+    height: 3px;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    background-color: @videoGrey;
+  }
+
+    &__player-bg {
+      display: none;
+    }
+
+    &__replay {
+      z-index: 1;
+      height: 94px;
+      width: 94px;
+    }
+
+    &__panel {
+      z-index: 1;
+      height: 94px;
+      width: 144px;
+    }
+      
+    &__panel-item {
+      height: 94px;
+      width: 94px;
+    }
+  }
+}
+
+@media (min-width: 1240px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .presentation__video {
+    background-image: url("../img/video-desktop@2x.jpg");
   }
 }

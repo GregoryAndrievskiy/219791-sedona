@@ -10,8 +10,8 @@
     font-size: 21px;
     line-height: 26px;
     color: @black;
-    margin-top: 9px;
-    margin-bottom: 21px;
+    margin-top: 8px;
+    margin-bottom: 20px;
   }
 
   &__copyright {
@@ -33,29 +33,42 @@
     display: inline-block;
     width: 30px;
     height: 35px;
-    background-repeat: no-repeat;
-    background-image: url("../img/logo-htmlacademy.svg");
-    margin-left: 16px;
+    margin-left: 12px;
     margin-top: 10px;
+  }
+
+  &__icon {
+  
+    &:hover {
+      fill: @bgNav;
+    }
+    
+    &:active {
+      fill: @iconAct;
+    }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 768px) and (max-width: 1239px) {
 
   .page-footer {
 
     &__wrapper {
+      width: 761px;
+      padding-left: 5px;
+      margin-top: 2px;
+
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
 
     &__tag {
-      margin-top: 20px;
+      margin-top: 27px;
     }
 
     &__copyright {
-      margin-top: 5px;
+      margin-top: 14px;
     }
   }
 }
@@ -65,20 +78,28 @@
   .page-footer {
 
     &__wrapper {
+      width: 1026px;
+      padding-left: 133px;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+    
+      &--form {
+        width: 947px;
+        padding-left: 13px;
+      }
     }
 
     &__tag {
-      margin-top: 20px;
+      margin-top: 27px;
     }
 
     &__copyright {
-      margin-top: 5px;
+      margin-top: 14px;
     }
 
-    &__text {
+    &--form {
+      width: 960px;
     }
   }
 }
