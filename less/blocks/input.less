@@ -11,7 +11,7 @@
       background-repeat: no-repeat;
       border-radius: 5px;
       position: absolute;
-      left: 0px;
+      left: -2px;
       top: -15px;
     }
 
@@ -83,7 +83,7 @@
     &--tel::after {
       content: "";
       display: inline-block;
-      height: 58px;
+      height: 57px;
       width: 58px;
       background-color: @Grey;
       background-repeat: no-repeat;
@@ -91,13 +91,13 @@
       background-position: center;
       position: absolute;
       right: 0px;
-      bottom: -65px;
+      bottom: 21px;
     }
 
     &--email::after {
       content: "";
       display: inline-block;
-      height: 58px;
+      height: 57px;
       width: 58px;
       background-color: @Grey;
       background-repeat: no-repeat;
@@ -105,36 +105,38 @@
       background-position: center;
       position: absolute;
       right: 0px;
-      bottom: -65px;
+      bottom: 0px;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 768px) and (max-width: 1239px) {
   .form {
 
     &__checkbox {
 
       & + .form__label--checkbox::before {
-        left: 0px;
+        left: 33px;
       }
     }
 
     &__radio {
 
       & + .form__label--radio::before {
-        left: -77px;
+        left: 3px;
+        top: -17px;
       }
     }
 
     &__label {
 
       &--tel::after {
-        right: 74px;
+        right: 0px;
+        bottom: 0px;
       }
 
       &--email::after {
-        right: 74px;
+        right: 0px;
       }
     }
   }
@@ -146,13 +148,13 @@
     &__label {
 
       &--tel::after {
-        right: -323px;
-        bottom: -7px;
+        right: 80px;
+        bottom: 0px;
       }
 
       &--email::after {
-        right: -284px;
-        bottom: -7px;
+        right: 0px;
+        bottom: 1px;
       }
     }
   }

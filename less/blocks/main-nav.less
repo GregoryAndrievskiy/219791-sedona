@@ -61,10 +61,14 @@
         background-color: @navDown;
       }
     }
+
+    &__link:active {
+      color: @butDown;
+    }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 768px) and (max-width: 1239px) {
 
   .main-nav {
     z-index: 2;
@@ -78,11 +82,20 @@
 
     &__item {
       border: none;
+      width: 150px;
+
+        &:nth-child(2) {
+        margin-right: 78px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 78px;
+      }
     }
 
     &__items {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       background: @white;
     }
 
@@ -130,9 +143,19 @@
 
     &__item {
       border: none;
+      width: 150px;
+
+      &:nth-child(2) {
+        margin-right: 122px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 122px;
+      }
     }
 
     &__items {
+      padding-top: 8px;
       display: flex;
       justify-content: space-around;
       background: @white;

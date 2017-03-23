@@ -10,7 +10,7 @@
     font-size: 21px;
     line-height: 26px;
     color: @black;
-    margin-top: 29px;
+    margin-top: 27px;
     margin-bottom: 20px;
   }
 
@@ -42,21 +42,55 @@
     text-decoration: none;
     color: @white;
     background-color: @bgBlue;
-    margin-top: 35px;
+    margin-top: 33px;
     margin-left: 20px;
     margin-right: 20px;
     line-height: 58px;
+
+    &:hover {
+      background-color: @navHov;
+    }
+
+    &:active {
+      background-color: @navDown;
+      color: @butDown;
+    }
   }
 
   &__map {
     display: block;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 49px;
+    margin-bottom: 27px;
     width: 320px;
+  }
+
+  &__map-marker {
+    position: absolute;
+    left: 146px;
+    top: 161px;
+  }
+
+  &__map-google {
+    display: block;
+    margin-top: 49px;
+    margin-bottom: 27px;
+    width: 320px;
+
+    &--nojs {
+      display: none;
+    }
+  }
+
+  &__gps {
+    position: relative;
+
+    &--js {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 768px) and (max-width: 1239px) {
 
   .order {
     display: flex;
@@ -71,7 +105,7 @@
     }
 
     &__description {
-      width: 410px;
+      width: 399px;
     }
 
     &__button {
@@ -88,6 +122,17 @@
       margin-top: 57px;
       margin-bottom: 17px;
     }
+
+    &__map-marker {
+      left: 370px;
+      top: 221px;
+    }
+
+    &__map-google {
+      width: 768px;
+      margin-top: 57px;
+      margin-bottom: 17px;
+    }
   }
 }
 
@@ -96,7 +141,7 @@
   .order {
     display: flex;
     flex-direction: column;
-    padding-top: 23px;
+    padding-top: 31px;
     align-items: center;
 
     &__title {
@@ -106,7 +151,7 @@
     }
 
     &__description {
-      width: 410px;
+      width: 399px;
     }
 
     &__button {
@@ -118,7 +163,20 @@
     }
 
     &__map {
-      margin-top: 67px;
+      margin-top: 66px;
+      margin-bottom: 19px;
+      width: 1200px;
+      height: 350px;
+    }
+
+    &__map-marker {
+      left: 586px;
+      top: 228px;
+    }
+
+    &__map-google {
+      margin-top: 66px;
+      margin-bottom: 19px;
       width: 1200px;
       height: 350px;
     }
