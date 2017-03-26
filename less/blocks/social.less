@@ -6,7 +6,6 @@
   justify-content: center;
 
   &__item {
-    position: relative;
     display: inline-block;
     margin-top: 17px;
     margin-left: 3px;
@@ -15,25 +14,9 @@
 
   &__icon {
     position: absolute;
-
-    &--twitter {
-      top: 16px;
-      right: 15px;
-    }
-
-    &--facebook {
-      top: 13px;
-      right: 19px;
-    }
-
-    &--youtube {
-      top: 17px;
-      right: 13px;
-    }
-
-    &:active {
-      fill: @iconDown;
-    }
+    width: 50%;
+    height: 50%;
+    transform: translate(50%, 50%);
   }
 
   &__link {
@@ -43,6 +26,7 @@
     display: inline-block;
     color: @white;
     fill: @white;
+    position: relative;
 
     &:hover {
       background-color: @navHov;
@@ -50,6 +34,7 @@
 
     &:active {
       background-color: @navDown;
+      fill: @iconDown;
     }
   }
 }

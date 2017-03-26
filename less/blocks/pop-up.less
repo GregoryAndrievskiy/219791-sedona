@@ -1,0 +1,153 @@
+.pop-up {
+
+  &__success {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    transform: translate(0px, 250%);
+    background-color: @white;
+    z-index: 6;
+    box-shadow: 0px 0px 30px 16px rgba(0,0,0,0.1);
+
+    &--opened {
+      display: flex;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  &__failure {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 320px;
+    height: 280px;
+    position: absolute;
+    transform: translate(0px, 150%);
+    background-color: @white;
+    z-index: 6;
+    box-shadow: 0px 0px 30px 16px rgba(0,0,0,0.1);
+
+    &--opened {
+      display: flex;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__title {
+    font-family: PTSansBold, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    width: 220px;
+  }
+
+  &__description {
+    font-family: PTSans, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: @subGrey;
+    width: 220px;
+  }
+
+  &__close {
+    display: block;
+    font-family: PTSansBold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    border: none;
+    height: 58px;
+    background: none;
+    color: @white;
+    width: 280px;
+    background-color: @bgNav;
+    outline: none;
+
+    &:hover {
+      background-color: @navHov;
+    }
+
+    &:active {
+      background-color: @navDown;
+      color: @butDown;
+    }
+  }
+
+  &__button {
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--fail {
+      background-color: @Grey;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239px) {
+
+  .pop-up {
+
+      &__failure {
+        height: 350px;
+        width: 400px;
+      }
+
+      &__success {
+        height: 350px;
+        width: 640px;
+      }
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 25px;
+
+      &--success {
+      width: 350px;      
+      }
+    }  
+
+    &__description {
+
+      &--success {
+       width: 450px;
+      }
+    }
+
+    &__button {
+      background-color: @Grey;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .pop-up {
+
+    &__button {
+      background-color: @Grey;
+    }
+  }
+}

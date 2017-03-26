@@ -52,6 +52,10 @@
     background: none;
     width: 64px;
     height: 58px;
+
+    &--closed {
+      display: none;
+    }
   }
 
   &__logo {
@@ -78,9 +82,17 @@
   &__triangle {
     position: absolute;
     width: 325px;
-    bottom: -1px;
-    left: -2px;
+    bottom: 0px;
+    left: 0;
   }
+  
+  &__triangle-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+  }
+  
 }
 
 @media(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -137,8 +149,12 @@
       display: block;
       position: absolute;
       width: 775px;
-      bottom: -1px;
-      left: -3px;
+      bottom: 0px;
+      left: 0;
+    }
+
+    &__triangle-wrapper {
+      height: 50px;
     }
   }
 }
@@ -196,8 +212,12 @@
       display: block;
       position: absolute;
       width: 1212px;
-      bottom: -1px;
-      left: -6px;
+      bottom: 0px;
+      left: 0;
+    }
+
+    &__triangle-wrapper {
+      height: 50px;
     }
   }
 }

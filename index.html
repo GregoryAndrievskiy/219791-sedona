@@ -8,13 +8,13 @@
   </head>
   <body class="body">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs"><!--main-nav--closed - скрытое меню, при работе JS. main-nav--nojs - меню в потоке, при нерабочем JS-->
             <div class="main-nav__wrapper">
               <ul class="main-nav__items">
                   <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
                   <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
                   <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-                  <li class="main-nav__item"><a href='#' class="main-nav__link">HTML Academy</a></li>
+                  <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
               </ul>
             </div>
         </nav>
@@ -24,23 +24,25 @@
             <picture>
               <source media="(min-width: 768px) and (max-width: 1239px)" srcset="img/logo-sedona-tablet.svg">
               <source media="(min-width: 1240px)" srcset="img/logo-sedona-desktop.svg">
-              <img class="page-header__logo-icon" src="img/logo-sedona-mobile.svg" srcset="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+              <img class="page-header__logo-icon" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
             </picture>
             </div>
-            <button class="page-header__cross page-header__cross--closed" type="button">
+            <button class="page-header__cross" type="button">
               <img class="page-header__cross-icon" src="img/icon-cross.svg" alt="закрыть меню">
             </button>
-            <button class="page-header__burger page-header__burger--closed" type="button">
-              <img class="page-header__burger-icon" src="img/icon-menu.svg" alt="открыть меню">
+            <button class="page-header__burger" type="button">
+              <img class="page-header__burger-icon" src="img/icon-menu.svg" alt="открыть меню"><!--page-header__burger--closed - скрывает кнопку, при закрытом меню -->
             </button>
           </div>
           <div class="page-header__background page-header__background--index">
             <img class="page-header__sedona-index" src="img/text-sedona-index.svg" alt="седона">
-            <picture>
-              <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <source media="(min-width:1240px)" srcset="img/bg-intro-triangle-desktop.svg">
-              <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg" alt="декоративный элемент">
-            </picture>
+            <div class="page-header__triangle-wrapper">
+			  <picture>
+                <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-intro-triangle-tablet.svg">
+                <source media="(min-width:1240px)" srcset="img/bg-intro-triangle-desktop.svg">
+                <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg" alt="декоративный элемент">
+              </picture>
+            </div>
           </div>
         </div>
       </header>
@@ -55,7 +57,7 @@
             <li class="facts-list__item facts-list__item--town">
               <div class="facts-list__content">
                 <h2 class="facts-list__title">Настоящий городок</h2>
-                <p class="facts-list__number"> &#821; №1 &#8211;</p>
+                <p class="facts-list__number"> &#8211; №1 &#8211;</p>
                 <p class="facts-list__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
             </li>
@@ -65,7 +67,7 @@
               <ul class="comforts">
                 <li class="comforts__item comforts__item--house">
                   <div class="comforts__name">
-                    <img class="comforts__icon" src="img/icon-house.svg" alt="дом">
+                    <img class="comforts__icon comforts__icon--house" src="img/icon-house.svg" alt="дом">
                     <h2 class="comforts__title">Жилье</h2>
                   </div>
                   <div class="comforts__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
@@ -73,7 +75,7 @@
                 </li>
                 <li class="comforts__item comforts__item--gifts">
                   <div class="comforts__name">
-                    <img class="comforts__icon" src="img/icon-gift.svg" alt="подарок">
+                    <img class="comforts__icon comforts__icon--gift" src="img/icon-gift.svg" alt="подарок">
                     <h2 class="comforts__title">Сувениры</h2>
                   </div>
                   <div class="comforts__description">Не только китайского, но и местного производства!
@@ -81,7 +83,7 @@
                 </li>
                 <li class="comforts__item comforts__item-food">
                   <div class="comforts__name">
-                    <img class="comforts__icon" src="img/icon-burger.svg" alt="гамбургер">
+                    <img class="comforts__icon comforts__icon--burger" src="img/icon-burger.svg" alt="гамбургер">
                     <h2 class="comforts__title">Еда</h2>
                   </div>
                   <div class="comforts__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -137,7 +139,7 @@
             </picture>
             <img class="order__map-marker" src="img/icon-map-marker.svg" alt="точка на карте">
           </section>
-          <iframe class="order__map-google order__map-google--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594469!2d-111.83015782304254!3d34.85437338108221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1488723440496" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="order__map-google order__map-google--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594469!2d-111.83015782304254!3d34.85437338108221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1488723440496" height="360" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
       <footer class="page-footer">

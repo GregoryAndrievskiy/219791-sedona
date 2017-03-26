@@ -177,8 +177,18 @@
     height: 58px;
     background: none;
     color: @white;
-    background-color: @bgBlue;
+    background-color: @bgNav;
     width: 280px;
+	outline: none;
+
+    &:hover {
+      background-color: @navHov;
+    }
+
+    &:active {
+      background-color: @navDown;
+      color: @butDown;
+    }
   }
 
   &__checkbox {
