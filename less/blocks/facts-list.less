@@ -72,7 +72,7 @@
     list-style: none;
 
       &--overview {
-        display: inline-block;
+        display: block;
         height: 260px;
         background-image: url("../img/photo-city-mobile@1x.jpg");
         background-position: top center;
@@ -81,7 +81,7 @@
       }
 
       &--bridge {
-        display: inline-block;
+        display: block;
         height: 260px;
         background-image: url("../img/photo-bridge-mobile@1x.jpg");
         background-position: bottom center;
@@ -107,7 +107,7 @@
       }
 
     &--bg-grey {
-      padding-top: 27px;
+      padding-top: 26px;
       background-color: @bgGrey;
     }
   }
@@ -176,8 +176,7 @@
     margin: 0px;
 
     &__content {
-      padding-left: 14px;
-      padding-right: 14px;
+      padding: 0;
       margin: 0px;
     }
 
@@ -189,25 +188,29 @@
 
       &--font-black {
         font-size: 21px;
-        padding-left: 39px;
-        padding-right: 39px;
+        padding-left: 53px;
+        padding-right: 53px;
         margin-top: 43px;
       }
     }
 
     &__subtitle {
-      padding-left: 16px;
-      padding-right: 16px;
       margin-top: 22px;
+      width: 170px;
+      margin-left: auto;
+      margin-right: auto;
 
       &--font-black {
-        margin-top: 22px;
         padding-left: 15px;
         padding-right: 15px;
       }
 
       &--tablet {
-        display: block;
+        display: inline;
+      }
+
+      &--mobile {
+        display: none;
       }
     }
 
@@ -308,11 +311,16 @@
       padding-left: 35px;
       padding-right: 35px;
 
+      &--city {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       &--font-black {
         padding-top: 0px;
-        margin-top: 22px;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-top: 24px;
+        padding-left: 48px;
+        padding-right: 48px;
       }
 
       &--tablet {
@@ -376,14 +384,22 @@
 
 @media (min-width: 1240px) and (-webkit-min-device-pixel-ratio: 2) {
 
-  .facts-list__item {
+  .facts-list {
 
-    &--bridge {
-      background-image: url("../img/photo-bridge@2x.jpg");
+    &--subtitle {
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
-    &--overview {
-      background-image: url("../img/photo-city@2x.jpg");
+    &__item {
+
+      &--bridge {
+        background-image: url("../img/photo-bridge@2x.jpg");
+      }
+
+      &--overview {
+        background-image: url("../img/photo-city@2x.jpg");
+      }
     }
   }
 }

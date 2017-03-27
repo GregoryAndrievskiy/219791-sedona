@@ -19,6 +19,10 @@
       background-color: @inputHov;
     }
 
+    & + .form__label--checkbox:active::before {
+      background-color: @inputDown;
+    }
+
     &:checked + .form__label--checkbox:active::before {
       background-color: @inputDown;
     }
@@ -59,7 +63,12 @@
       background-color: @inputHov;
     }
 
-    &:checked + .form__label--radio:active::before {
+    & + .form__label--radio:active::before {
+      background-color: @inputDown;
+    }
+
+
+      &:checked + .form__label--radio:active::before {
       background-color: @inputDown;
     }
 

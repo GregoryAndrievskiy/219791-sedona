@@ -8,6 +8,10 @@
   margin: 0;
   padding-top: 15px;
 
+  &__desktop {
+    display: none;
+  }
+
   &__item {
     padding: 0px;
     margin-top: 0px;
@@ -27,8 +31,21 @@
     display: inline-block;
     height: 38px;
     width: 38px;
-    left: -51px;
-    bottom: 11px;
+
+    &--house {
+      left: -48px;
+      bottom: 13px;
+    }
+
+    &--gift {
+      left: -48px;
+      bottom: 14px;
+    }
+
+    &--burger {
+      left: -51px;
+      bottom: 9px;
+    }
   }
 
   &__title {
@@ -64,11 +81,15 @@
     padding-top: 0px;
     padding-bottom: 0px;
 
+    &__desktop {
+      display: none;
+    }
+
     &__icon {
       height: 75px;
       width: 75px;
       left: 47px;
-      bottom: 70px;
+      bottom: 68px;
     }
 
     &__item {
@@ -97,10 +118,11 @@
     }
 
     &__description {
-      margin: 0;
       margin-top: 3px;
       padding: 0;
-      text-align: center;
+      width: 163px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -112,26 +134,17 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
-    width: 1177px;
     height: 287px;
+
+    &__desktop {
+      display: block;
+    }
 
     &__icon {
       height: 75px;
       width: 75px;
-      left: 85px;
-      bottom: 70px;
-
-      &--house {
-        left: 92px;
-      }
-
-      &--burger {
-        left: 98px;
-      }
-
-      &--gift {
-        left: 80px;
-      }
+      left: 104px;
+      bottom: 69px;
     }
 
     &__item--house {
@@ -143,8 +156,8 @@
     }
 
     &__item {
-      padding-left: 70px;
-      padding-right: 70px;
+      display: flex;
+      flex-direction: column;
       margin-top: 14px;
     }
 
@@ -166,7 +179,8 @@
       text-align: center;
       padding: 0;
       text-align: center;
-      margin-top: 3px;
+      margin-top: 4px;
+      width: 285px;
     }
   }
 }
