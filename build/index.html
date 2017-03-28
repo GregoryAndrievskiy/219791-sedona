@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <title>Главная</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="body">
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs"><!--main-nav--closed - скрытое меню, при работе JS. main-nav--nojs - меню в потоке, при нерабочем JS-->
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__items">
+                  <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Главная</a></li>
+                  <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
+                  <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
+                  <li class="main-nav__item"><a href="https://htmlacademy.ru" class="main-nav__link">HTML Academy</a></li>
+              </ul>
+            </div>
+        </nav>
+        <div class="page-header__inner">
+          <div class="page-header__toggle">
+            <div class="page-header__logo">
+            <picture>
+              <source media="(min-width: 768px) and (max-width: 1239px)" srcset="img/logo-sedona-tablet.svg">
+              <source media="(min-width: 1240px)" srcset="img/logo-sedona-desktop.svg">
+              <img class="page-header__logo-icon" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+            </picture>
+            </div>
+            <button class="page-header__cross" type="button">
+              <img class="page-header__cross-icon" src="img/icon-cross.svg" alt="закрыть меню">
+            </button>
+            <button class="page-header__burger" type="button">
+              <img class="page-header__burger-icon" src="img/icon-menu.svg" alt="открыть меню"><!--page-header__burger--closed - скрывает кнопку, при закрытом меню -->
+            </button>
+          </div>
+          <div class="page-header__background page-header__background--index">
+            <img class="page-header__sedona-index" src="img/text-sedona-index.svg" alt="седона">
+            <div class="page-header__triangle-wrapper">
+              <picture>
+                <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-intro-triangle-tablet.svg">
+                <source media="(min-width:1240px)" srcset="img/bg-intro-triangle-desktop.svg">
+                <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg" alt="декоративный элемент">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <div class="intro intro--index">
+          <h1 class="intro__title intro__title--index">Cедона &#8211; Небольшой<br class="intro__wrap"> городок в аризоне,<br class="intro__wrap"> заслуживающий большего!</h1>
+          <p class="intro__subtitle intro__subtitle--index">Рассмотрим 5 причин, по которым Седона кручем чем Гранд Каньон!</p>
+        </div>
+        <section class="facts">
+          <img class="facts__triangle" src="img/bg-triangle.svg" alt="декоративный элемент">
+          <ul class="facts-list">
+            <li class="facts-list__item facts-list__item--town">
+              <div class="facts-list__content">
+                <h2 class="facts-list__title">Настоящий городок</h2>
+                <p class="facts-list__number"> &#8211; №1 &#8211;</p>
+                <p class="facts-list__subtitle facts-list__subtitle--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+            </li>
+            <li class="facts-list__item facts-list__item--overview">
+            </li>
+            <li class="facts-list__item facts-list__item--comforts">
+              <ul class="comforts">
+                <li class="comforts__item comforts__item--house">
+                  <div class="comforts__name">
+                    <img class="comforts__icon comforts__icon--house" src="img/icon-house.svg" alt="дом">
+                    <h2 class="comforts__title">Жилье</h2>
+                  </div>
+                  <div class="comforts__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </div>
+                </li>
+                <li class="comforts__item comforts__item--gifts">
+                  <div class="comforts__name">
+                    <img class="comforts__icon comforts__icon--gift" src="img/icon-gift.svg" alt="подарок">
+                    <h2 class="comforts__title">Сувениры</h2>
+                  </div>
+                  <div class="comforts__description">Не только китайского,<br class="comforts__desktop"> но и местного производства!
+                  </div>
+                </li>
+                <li class="comforts__item comforts__item-food">
+                  <div class="comforts__name">
+                    <img class="comforts__icon comforts__icon--burger" src="img/icon-burger.svg" alt="гамбургер">
+                    <h2 class="comforts__title">Еда</h2>
+                  </div>
+                  <div class="comforts__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="facts-list__item facts-list__item--bridge">
+            </li>
+            <li class="facts-list__item facts-list__item--devils">
+              <div class="facts-list__content">
+                <h2 class="facts-list__title">Там есть Мост Дьявола</h2>
+                <p class="facts-list__number">&#8211; №2 &#8211;</p>
+                <p class="facts-list__subtitle">Да, по нему можно пройти! Если Вы Осмелитесь, конечно</p>
+              </div>
+            </li>
+            <li class="facts-list__item facts-list__item--bg-grey">
+              <div class="facts-list__content facts-list__content--font-black">
+                <h2 class="facts-list__title facts-list__title--font-black">Небольшая площадь</h2>
+                <p class="facts-list__number facts-list__number--font-black">&#8211; №3 &#8211;</p>
+                <p class="facts-list__subtitle facts-list__subtitle--font-black">Все достопримеча<span class="facts-list__subtitle--tablet">-<br></span>тельности <br class="facts-list__subtitle--mobile">находятся<br class="facts-list__subtitle--tablet"> очень близко</p>
+              </div>
+              <hr class="facts-list__divider">
+            </li>
+            <li class="facts-list__item facts-list__item--bg-grey">
+              <div class="facts-list__content facts-list__content--font-black">
+                <h2 class="facts-list__title facts-list__title--font-black">Красивая дорога</h2>
+                <p class="facts-list__number facts-list__number--font-black">&#8211; №4 &#8211;</p>
+                <p class="facts-list__subtitle facts-list__subtitle--font-black">Ехать в Седону из<br class="facts-list__subtitle--tablet"> Лас-Вегаса<br class="facts-list__subtitle--mobile"> совсем <br class="facts-list__subtitle--tablet">не скучно!</p>
+              </div>
+              <hr class="facts-list__divider">
+            </li>
+            <li class="facts-list__item facts-list__item--bg-grey">
+              <div class="facts-list__content facts-list__content--font-black">
+                <h2 class="facts-list__title facts-list__title facts-list__title--font-black">Мало туристов</h2>
+                <p class="facts-list__number facts-list__number--font-black">&#8211; №5 &#8211;</p>
+                <p class="facts-list__subtitle facts-list__subtitle--font-black">Большинство едет в<br class="facts-list__subtitle--tablet"> гранд каньон <br class="facts-list__subtitle--mobile">и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="order">
+          <span class="order__title">Заинтересовались?</span>
+          <p class="order__description">Укажите предполагаемые даты поездки,<br class="order__desktop"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="order__button">
+            <a class="order__link" href="#">Найти гостиницу</a>
+          </div>
+          <section class="order__gps">
+            <picture>
+              <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <source media="(min-width:1240px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <img class="order__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="Распроложение на карте">
+            </picture>
+            <img class="order__map-marker" src="img/icon-map-marker.svg" alt="точка на карте">
+          </section>
+          <iframe class="order__map-google order__map-google--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594469!2d-111.83015782304254!3d34.85437338108221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1488723440496" height="350" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-footer__tag">
+              <b>#VISITSEDONA</b>
+            </p>
+            <div class="page-footer__social">
+              <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="#"><svg class="social__icon social__icon--twitter" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+  <g id="W6EeEF_1_">
+    <g>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+    </g>
+  </g>
+</svg></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#"><svg class="social__icon social__icon--facebook" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+</svg></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#"><svg class="social__icon social__icon--youtube" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+</svg></a>
+                  </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright">
+            <p class="page-footer__text">Разработано</p>
+            <a class="page-footer__link" href="#"><svg class="page-footer__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+</svg></a>
+            </div>
+        </div>
+      </footer>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
