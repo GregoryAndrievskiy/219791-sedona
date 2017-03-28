@@ -36,11 +36,13 @@
           </div>
           <div class="page-header__background">
             <img class="page-header__sedona" src="img/text-sedona.svg" alt="седона">
-            <picture>
-              <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <source media="(min-width:1240px)" srcset="img/bg-intro-triangle-desktop.svg">
-              <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg" alt="декоративный элемент">
-            </picture>
+            <div class="page-header__triangle-wrapper">
+          <picture>
+                <source media="(min-width:768px) and (max-width: 1239px)" srcset="img/bg-intro-triangle-tablet.svg">
+                <source media="(min-width:1240px)" srcset="img/bg-intro-triangle-desktop.svg">
+                <img class="page-header__triangle" src="img/bg-intro-triangle-mobile.svg" alt="декоративный элемент">
+              </picture>
+            </div>
           </div>
         </div>
       </header>
@@ -57,15 +59,15 @@
                 <legend class="form__title form__title--fio">Представьтесь:</legend>
                 <div class="form__item">
                   <label class="form__label form__label--fio" for="myname">Имя*:</label>
-                  <input class="form__input form__label--fio form__input--name" type="text" name="myname"  placeholder="Петр" required id="myname">
+                  <input class="form__input form__input--fio" type="text" name="myname"  placeholder="Петр" required id="myname">
                 </div>
                 <div class="form__item">
                   <label class="form__label form__label--fio" for="surname">Фамилия*:</label>
-                  <input class="form__input form__input--fio form__input--surname" type="text" name="surname" placeholder="Иванов" required id="surname">
+                  <input class="form__input form__input--fio" type="text" name="surname" placeholder="Иванов" required id="surname">
                 </div>
                 <div class="form__item">
                   <label class="form__label form__label--fio" for="patronymic">Отчество:</label>
-                  <input class="form__input form__input--fio form__input--patron" type="text" name="patronymic" placeholder="Александрович" id="patronymic">
+                  <input class="form__input form__input--fio" type="text" name="patronymic" placeholder="Александрович" id="patronymic">
                 </div>
               </fieldset>
             </div>

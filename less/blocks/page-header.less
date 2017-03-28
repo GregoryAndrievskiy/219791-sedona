@@ -81,18 +81,11 @@
 
   &__triangle {
     position: absolute;
-    width: 325px;
+    width: 330px;
     bottom: 0px;
-    left: 0;
+    left: -5px;
+    border-bottom: 1px solid @white;
   }
-
-  &__triangle-wrapper {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-  }
-
 }
 
 @media(max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -152,10 +145,6 @@
       bottom: 0px;
       left: 0;
     }
-
-    &__triangle-wrapper {
-      height: 50px;
-    }
   }
 }
 
@@ -211,13 +200,9 @@
     &__triangle {
       display: block;
       position: absolute;
-      width: 1200px;
+      width: 1210px;
       bottom: 0px;
-      left: 0;
-    }
-
-    &__triangle-wrapper {
-      height: 50px;
+      left: -5px;
     }
   }
 }
